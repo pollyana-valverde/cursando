@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./imagens/logo-topoc.png">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="js/orders.js"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="conteiner">
+        <aside>
+
+        </aside>
+        <!--navbar offcanva-->
+        <nav class="navbar bg-body-tertiary fixed-top nav-off-canva ">
+            <div class="container">
+                <a class="navbar-brand" href="cursos.html">Cursando</a>
+
+
+                <input class="barra-pesquisa open-search" type="text" placeholder="Pesquisar...">
+                <i class="fa fa-times close-search fa-lg barra-pesquisa open-search" aria-hidden="true"
+                    style="color: #8B00F5;" onclick="fecharP(this)"></i>
+
+                <i class="fa fa-search lupa-search fa-lg" aria-hidden="true" style="color: #8B00F5;"
+                    onclick="abrirP(this)"></i>
+                <i class="fa fa-shopping-cart cart-icon fa-lg" aria-hidden="true" style="color: #8B00F5;"></i>
+                <i class="fa fa-bars navbar-toggler fa-lg" style="color: #8B00F5;" aria-hidden="true" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                    aria-label="Toggle navigation"></i>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Cursando</h5>
+
+                        <i class="fa fa-times fa-lg" style="color: white;" type="button" data-bs-dismiss="offcanvas"
+                            aria-label="Close" aria-hidden="true"></i>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item navItemAtivo">
+                                <a class="nav-link navLinkAtivo" aria-current="page" href="cursos.html"><i
+                                        class='bx bx-grid-alt'></i>Todos os cursos</a>
+                            </li>
+
+                            <ul class="conteiner-profile">
+                                <li class="nav-item img-profile">
+                                    <img src="imagens/orient1.png">
+                                    <h5>Vitória Seixas</h5>
+                                    <h6>Artist | Makeup</h6>
+                                </li>
+                                <div class="border-bottom"></div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="minha-análise.html"><i class="fa fa-tasks"
+                                            aria-hidden="true"></i>Meu aprendizado</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="orientador1.html"><i class='bx bx-user'></i>Perfil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="dashboard.html"><i
+                                            class='bx bx-pie-chart-alt-2'></i>Análise</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class='bx bx-cog'></i>Configurações</a>
+                                </li>
+                                <div class="border-bottom"></div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index (1).html"><i class="fa fa-sign-out"
+                                            style="color: white;"></i>Sair</a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <main>
+
+            <div class="analyse">
+                <div class="sales">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total Sales</h3>
+                            <h1 class="num" data-val="414">R$</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36">
+
+                                </circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+81%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visits">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Visitas no curso</h3>
+                            <h1 class="num" data-val="228">0,0</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36">
+
+                                </circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>-41%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="searches">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Procura</h3>
+                            <h1 class="num" data-val="147">0,0</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36">
+
+                                </circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+21%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- usuários -->
+            <div class="new-users">
+                <h2>Novos Usuários</h2>
+                <div class="user-list">
+                    <div class="user">
+                        <img src="imagens/Andreia16.png">
+                        <h2>Andreia</h2>
+                        <p>54 Min Ago</p>
+                    </div>
+                    <div class="user">
+                        <img src="imagens/Angelica15.png">
+                        <h2>Angelica</h2>
+                        <p>1 Hour Ago</p>
+                    </div>
+                    <div class="user">
+                        <img src="imagens/Alex18.png">
+                        <h2>Alex</h2>
+                        <p>2 Days Ago</p>
+                    </div>
+                    <div class="user">
+                        <img src="imagens/David10.png">
+                        <h2>David</h2>
+                        <p>20 Min Ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- pedidos recentes -->
+            <div class="recent-orders">
+                <h2>Pedidos Recentes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome do Curso</th>
+                            <th>Número do Curso</th>
+                            <th>Pagamento</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <a href="#">Mostre todos</a>
+            </div>
+
+        </main>
+
+        <!-- seção esquerda -->
+        <div class="right-section">
+            <div class="user-profile">
+                <div class="logo">
+                    <img src="imagens/orient1.png" alt="">
+                    <h2>Vitória Seixas</h2>
+                    <p>Artist | Makeup</p>
+                </div>
+            </div>
+
+            <div class="reminders" id="reminder">
+                <div class="header">
+                    <div class="h2">Lembretes</div>
+                    <span class="material-symbols-outlined" >
+                        <i class="fa-regular fa-bell" aria-hidden="true" onclick="NotificationLembre(this)"></i>
+                    </span>
+                </div>
+                <div class="notification">
+                    <div class="icon primary_bg">
+                        <span class="material-symbols-outlined">
+                            <i class="fa fa-volume-up iconeLembre" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Workshop</h3>
+                            <small class="text-muted">24/12/2023</small><br>
+                            <small class="text-muted">12:00</small>
+                        </div>
+                    </div>
+                    <span class="material-symbols-outlined"  data-bs-toggle="dropdown" aria-expanded="false">
+                        more_vert
+                    </span>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item" onclick="excluirLinha(this)">Deletar</li>
+                      </ul>
+                </div>
+                <div class="notification">
+                    <div class="icon warning_bg">
+                        <span class="material-symbols-outlined">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Workshop</h3>
+                            <small class="text-muted">19/11/2023</small><br>
+                            <small class="text-muted">08:00</small>
+                        </div>
+                    </div>
+                    <span class="material-symbols-outlined "  data-bs-toggle="dropdown" aria-expanded="false">
+                        more_vert
+                    </span>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item" onclick="excluirLinha(this)">Deletar</li>
+                      </ul>
+                </div>
+
+            </div>
+
+            <div class="reminders">
+                <div class="notification add-reminder" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div>
+                        <span class="material-symbols-outlined">
+                            add
+                        </span>
+                        <h3>Criar Lembrete</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container-floating">
+        <div class="nd4 nds"><img class="reminder">
+            <p class="letter"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></p>
+        </div>
+
+        <div class="nd3 nds"><img class="reminder">
+            <p class="letter"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></p>
+        </div>
+
+        <div class="nd1 nds">
+            <p class="letter"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i></p>
+        </div>
+
+        <div id="floating-button">
+            <p class="plus">+</p>
+            <i class="fa-solid fa-pen edit" style="color: #8B00F5;"></i>
+        </div>
+    </div>
+
+    <!-- rodapé -->
+    <footer>
+        <div class="container-fluid rodape">
+
+            <div class="row ">
+                <div class="col-md-4 logo-rodape">
+                    <b><a href="#">Cursando</a></b>
+                    <p>Milhares de vídeo-aulas em um único espaço. A qualquer hora, em qualquer lugar! Cursando,
+                        sua
+                        plataforma EAD!</p>
+                </div>
+                <div class="col-md-2 s-1 col-sm-6">
+
+                    <ul>
+                        <li>
+                            <h5>Cursos</h5>
+                        </li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Tecnologia</a></li>
+                        <li><a href="#">Vestibular</a></li>
+                        <li><a href="#">Economia</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 s-1 col-sm-6">
+
+                    <ul>
+                        <li>
+                            <h5>Links úteis</h5>
+                        </li>
+                        <li><a href="#">Sua conta</a></li>
+                        <li><a href="#">Seja afiliado!</a></li>
+                        <li><a href="termos.html">Termos de privacidade</a></li>
+                        <li><a href="#">Ajuda</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 ">
+                    <form class="subscribe">
+                        <h5>Faça parte da nossa comunidade!</h5>
+                        <input type="text" placeholder="Digite seu e-mail">
+                        <button>Inscreva-se!</button>
+                    </form>
+                </div>
+                <div class="col-md-12 border-top Cr">
+                    <p>© 2023 Companhia, Inc. Todos os direitos reservados.</p>
+                    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                        <li class="ms-3"><a href="#"><img src="imagens/facebook.png" width="24" alt=""></a></li>
+                        <li class="ms-3"><a href="#"><img src="imagens/instagram.png" width="24" alt=""></a>
+                        </li>
+                        <li class="ms-3"><a href="#"><img src="imagens/tiktok.png" width="24" alt=""></a></li>
+                        <li class="ms-3"><a href="#"><img src="imagens/youtube.png" width="28" alt=""></a></li>
+                        <li class="ms-3"><a href="#"><img src="imagens/linkedin.png" width="24" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+<!-- Modal -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Crie um lembrete</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body form_pagamento">
+                                <form id="formLemre">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput" class="form-label">Nome do
+                                                    lembrete</label>
+                                                <input type="text" class="form-control " id="nomeLembre"
+                                                    placeholder="Ex: Workshop...">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col">
+                                            
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h6>Dia</h6>
+                                                        <div class="col-lg-5">
+                                                            <input type="date" class="form-control "
+                                                                aria-label="First name" id="diaLembre">
+                                                        </div>
+                                                        <h6>Horário</h6>
+                                                        <div class="col-lg-5">
+                                                            <input type="time" class="form-control "
+                                                                aria-label="First name" id="horaLembre">
+                                                        </div>
+                                                        <br>
+                                                        <h6>Ícone</h6>
+                                                        <ul class="nav nav-pills mb-3 tab_icone_lembre" id="pills-tab" role="tablist">
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link primary_bg" id="pills-home-tab"
+                                                                    data-bs-toggle="pill" data-bs-target="#pills-home"
+                                                                    type="button" role="tab" aria-controls="pills-home"
+                                                                    aria-selected="true"><span
+                                                                        class="material-symbols-outlined ">
+                                                                        <i class="fa fa-volume-up iconeLembre" aria-hidden="true"></i>
+                                                                    </span></button>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link warning_bg" id="pills-profile-tab"
+                                                                    data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                                                    type="button" role="tab" aria-controls="pills-profile"
+                                                                    aria-selected="false"><span
+                                                                        class="material-symbols-outlined iconeLembre">
+                                                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                                    </span></button>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link success_bg" id="pills-contact-tab"
+                                                                    data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                                                    type="button" role="tab" aria-controls="pills-contact"
+                                                                    aria-selected="false"><span
+                                                                        class="material-symbols-outlined iconeLembre">
+                                                                        <i class="fa fa-suitcase" aria-hidden="true"></i>
+                                                                    </span></button>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link danger_bg" id="pills-contact-tab"
+                                                                    data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                                                    type="button" role="tab" aria-controls="pills-contact"
+                                                                    aria-selected="false"><span
+                                                                        class="material-symbols-outlined iconeLembre">
+                                                                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                                                                    </span></button>
+                                                            </li>
+    
+                                                        </ul>
+    
+                                                        <h6>Lembrar</h6>
+                                                        <div class="btn-group lembretes_inputs" role="group"
+                                                            aria-label="Button group with nested dropdown">
+                                                            <div class="btn-group" role="group">
+                                                                <button type="button"
+                                                                    class="btn btn-primary dropdown-toggle"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false"
+                                                                    style="background-color: #8B00F5; border-color: #8B00F5;">
+                                                                    Notificação
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Notificação</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">E-mail</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <input type="number" class="form-control">
+    
+                                                            <div class="btn-group" role="group">
+                                                                <button type="button"
+                                                                    class="btn btn-primary dropdown-toggle"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false"
+                                                                    style="background-color: #8B00F5; border-color: #8B00F5;">
+                                                                    Minutos antes
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Minutos antes</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Horas antes</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Dias antes</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+    
+    
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary mf_btn1" data-bs-dismiss="modal" onclick="resetarform()">
+                                    Cancelar </button>
+                                <button type="button" class="btn btn-primary mf_btn2" data-bs-dismiss="modal" onclick="criarLembrete()">
+                                    Criar </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

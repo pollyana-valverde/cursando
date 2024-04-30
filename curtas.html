@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Curtas | Vitória Seixas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./imagens/logo-topoc.png">
+    <link rel="stylesheet" href="css/curtas.css">
+
+</head>
+
+<body>
+
+    <!--navbar offcanva-->
+    <nav class="navbar bg-body-tertiary fixed-top nav-off-canva ">
+        <div class="container">
+            <a class="navbar-brand" href="cursos.html">Cursando</a>
+
+
+            <input class="barra-pesquisa open-search" type="text" placeholder="Pesquisar...">
+            <i class="fa fa-times close-search fa-lg barra-pesquisa open-search" aria-hidden="true"
+                style="color: #8B00F5;" onclick="fecharP(this)"></i>
+
+            <i class="fa fa-search lupa-search" aria-hidden="true" style="color: #8B00F5;" onclick="abrirP(this)"></i>
+            <i class="fa fa-shopping-cart cart-icon" aria-hidden="true" style="color: #8B00F5;"></i>
+            <i class="fa fa-bars navbar-toggler fa-lg" style="color: #8B00F5;" aria-hidden="true" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation"></i>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Cursando</h5>
+
+                    <i class="fa fa-times fa-lg" style="color: white;" type="button" data-bs-dismiss="offcanvas"
+                        aria-label="Close" aria-hidden="true"></i>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item navItemAtivo">
+                            <a class="nav-link navLinkAtivo" aria-current="page" href="cursos.html"><i
+                                    class='bx bx-grid-alt'></i>Todos os cursos</a>
+                        </li>
+
+                        <ul class="conteiner-profile">
+                            <li class="nav-item img-profile">
+                                <img src="imagens/orient1.png">
+                                <h5>Vitória Seixas</h5>
+                                <h6>Artist | Makeup</h6>
+                            </li>
+                            <div class="border-bottom"></div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="minha-análise.html"><i class="fa fa-tasks"
+                                        aria-hidden="true"></i>Meu aprendizado</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="orientador1.html"><i class='bx bx-user'></i>Perfil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dashboard.html"><i
+                                        class='bx bx-pie-chart-alt-2'></i>Análise</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class='bx bx-cog'></i>Configurações</a>
+                            </li>
+                            <div class="border-bottom"></div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index (1).html"><i class="fa fa-sign-out"
+                                        style="color: white;"></i>Sair</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- filtros -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- tab -->
+                <ul class="tabs-box">
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content">
+        <div class="parte-principal-cursos-conteiner tab-pass tabAtivo">
+
+            <!-- photo -->
+
+            <!-- carrossel cards -->
+            <div class="container conteiner-carrossel">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12">
+                        <a href="orientador1.html"><img src="imagens/banner-gif3.gif" class="section-name2"></a>
+
+                        <section class="cardsPrincipal">
+
+                            <div class="swiper mySwiper container">
+                                <div class="swiper-wrapper content" style="padding-top: 13%;">
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curta1.gif" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curta2.gif" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curta3c.gif" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curta4.gif" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curta5.gif" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curta6.gif" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curta7.gif" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curta8.gif" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curta9.gif" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--deixar os botões escondidos no mobile-->
+                            <div id="nextOne" class="swiper-button-next"></div>
+                            <div id="prevOne" class="swiper-button-prev"></div>
+                            <div id="pagOne" class="swiper-pagination"></div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- carrossel cards 2-->
+            <div class="container conteiner-carrossel" style="padding-top: 10%;">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <h1 class="section-name">Trends</h1>
+                        <section class="cardsPrincipal" style="padding-top: 15%;">
+
+                            <div class="swiper mySwiper2 container">
+                                <div class="swiper-wrapper content">
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curta9.gif" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curta8.gif" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curta7.gif" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curta6.gif" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curta5.gif" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curta4.gif" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curta3c.gif" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curta2.gif" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curta1.gif" /></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="nextTwo" class="swiper-button-next"></div>
+                            <div id="prevTwo" class="swiper-button-prev"></div>
+                            <div id="pagTwo" class="swiper-pagination"></div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- rodapé -->
+            <footer>
+                <div class="container-fluid rodape">
+
+                    <div class="row ">
+                        <div class="col-md-4 logo-rodape">
+                            <b><a href="#">Cursando</a></b>
+                            <p>Milhares de vídeo-aulas em um único espaço. A qualquer hora, em qualquer lugar! Cursando,
+                                sua
+                                plataforma EAD!</p>
+                        </div>
+                        <div class="col-md-2 s-1">
+
+                            <ul>
+                                <li>
+                                    <h5>Cursos</h5>
+                                </li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Tecnologia</a></li>
+                                <li><a href="#">Vestibular</a></li>
+                                <li><a href="#">Economia</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 s-1">
+
+                            <ul>
+                                <li>
+                                    <h5>Links úteis</h5>
+                                </li>
+                                <li><a href="#">Sua conta</a></li>
+                                <li><a href="#">Seja afiliado!</a></li>
+                                <li><a href="termos.html">Termos de privacidade</a></li>
+                                <li><a href="#">Ajuda</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 ">
+                            <form class="subscribe">
+                                <h5>Faça parte da nossa comunidade!</h5>
+                                <input type="text" placeholder="Digite seu e-mail">
+                                <button>Inscreva-se!</button>
+                            </form>
+                        </div>
+                        <div class="col-md-12 border-top Cr">
+                            <p>© 2023 Companhia, Inc. Todos os direitos reservados.</p>
+                            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                                <li class="ms-3"><a href="#"><img src="imagens/facebook.png" width="24" alt=""></a></li>
+                                <li class="ms-3"><a href="#"><img src="imagens/instagram.png" width="24" alt=""></a>
+                                </li>
+                                <li class="ms-3"><a href="#"><img src="imagens/tiktok.png" width="24" alt=""></a></li>
+                                <li class="ms-3"><a href="#"><img src="imagens/youtube.png" width="28" alt=""></a></li>
+                                <li class="ms-3"><a href="#"><img src="imagens/linkedin.png" width="24" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+
+        <!-- chatbox -->
+        <div id="container-floating">
+            <a href="https://web.whatsapp.com/">
+                <div class="nd4 nds"><img class="reminder">
+                    <p class="letter"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></p>
+            </a>
+        </div>
+        <a href="https://www.instagram.com/cursandotecnico/">
+            <div class="nd3 nds"><img class="reminder">
+                <p class="letter"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></p>
+            </div>
+        </a>
+        <div class="nd1 nds">
+            <a href="mailto:cursando-sac@gmail.com?Subject = Preciso%20%20de%20Atendimento">
+                <p class="letter"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i></p>
+            </a>
+        </div>
+        <div id="floating-button">
+            <p class="plus">+</p>
+            <i class="fa-solid fa-pen edit" style="color: #8B00F5;"></i>
+        </div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="js/curtas.js"></script>
+</body>
+
+</html>

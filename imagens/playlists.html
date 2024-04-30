@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Playlists | Vitória Seixas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./imagens/logo-topoc.png">
+    <link rel="stylesheet" href="css/playlists.css">
+</head>
+
+<body>
+
+
+
+    <!--navbar offcanva-->
+    <nav class="navbar bg-body-tertiary fixed-top nav-off-canva ">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cursando</a>
+
+
+            <input class="barra-pesquisa open-search" type="text" placeholder="Pesquisar...">
+            <i class="fa fa-times close-search fa-lg barra-pesquisa open-search" aria-hidden="true"
+                style="color: #8B00F5;" onclick="fecharP(this)"></i>
+
+            <i class="fa fa-search lupa-search" aria-hidden="true" style="color: #8B00F5;" onclick="abrirP(this)"></i>
+            <i class="fa fa-shopping-cart cart-icon" aria-hidden="true" style="color: #8B00F5;" data-bs-toggle="modal"
+                data-bs-target="#exampleModal"><span class="cart-nav" id="itemsCarrinho"
+                    data-totalitems="0">0</span></i>
+            <i class="fa fa-bars navbar-toggler fa-lg" style="color: #8B00F5;" aria-hidden="true" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation"></i>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Cursando</h5>
+
+                    <i class="fa fa-times fa-lg" style="color: white;" type="button" data-bs-dismiss="offcanvas"
+                        aria-label="Close" aria-hidden="true"></i>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item navItemAtivo">
+                            <a class="nav-link navLinkAtivo" aria-current="page" href="#"><i
+                                    class='bx bx-grid-alt'></i>Todos os cursos</a>
+                        </li>
+
+                        <ul class="conteiner-profile">
+                            <li class="nav-item img-profile">
+                                <img src="imagens/Alex18.png">
+                                <h5>Alex Barbosa</h5>
+                                <h6>Web Developer</h6>
+                            </li>
+                            <div class="border-bottom"></div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa fa-tasks" aria-hidden="true"></i>Meus
+                                    cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="orientador.html"><i class='bx bx-user'></i>Perfil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class='bx bx-chat'></i>Mensagens</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dashboard.html"><i
+                                        class='bx bx-pie-chart-alt-2'></i>Análise</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class='bx bx-cog'></i>Configurações</a>
+                            </li>
+                            <div class="border-bottom"></div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index (1).html"><i class="fa fa-sign-out"
+                                        style="color: white;"></i>Sair</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12">
+                <a href="orientador1.html"><img src="imagens/banner-gif2.gif" class="section-name2"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container responsividade" style="padding-top: 11%;">
+        <div class="row ">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+
+                <div class="cardDesejo">
+                    <div class="card__thumb1">
+                        <img src="imagens/play1.png" />
+                    </div>
+                    <div class="card__bodyprog">
+                        <h2 class="card__title">Dicas e Desafios</h2>
+                        <div class="card__subtitle2"><a href="make-cursos.html">Ver playlist completa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+
+                <div class="cardDesejo">
+                    <div class="card__thumb1">
+                        <a href="#"><img src="imagens/play8.png" /></a>
+                    </div>
+                    <div class="card__bodyprog">
+                        <h2 class="card__title">Maquiagem Mastery</h2>
+                        <div class="card__subtitle2"><a href="make-cursos.html">Ver playlist completa</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+
+                <div class="cardDesejo">
+                    <div class="card__thumb1">
+                        <a href="#"><img src="imagens/play9.png" /></a>
+                    </div>
+                    <div class="card__bodyprog">
+                        <h2 class="card__title">Vitamina C - Sérum</h2>
+                        <div class="card__subtitle2"><a href="make-cursos.html">Ver playlist completa</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+
+                <div class="cardDesejo">
+                    <div class="card__thumb1">
+                        <a href="#"><img src="imagens/play4.png" /></a>
+                    </div>
+                    <div class="card__bodyprog">
+                        <h2 class="card__title">Produtos Inéditos</h2>
+                        <div class="card__subtitle2"><a href="make-cursos.html">Ver playlist completa</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+
+                <div class="cardDesejo">
+                    <div class="card__thumb1">
+                        <a href="#"><img src="imagens/play5.png" /></a>
+                    </div>
+                    <div class="card__bodyprog">
+                        <h2 class="card__title">Cuidados para Vida</h2>
+                        <div class="card__subtitle2"><a href="make-cursos.html">Ver playlist completa</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="cardDesejo">
+                    <div class="card__thumb1">
+                        <a href="#"><img src="imagens/play6.png" /></a>
+                    </div>
+                    <div class="card__bodyprog">
+                        <h2 class="card__title">Baratinhos Skincare</h2>
+                        <div class="card__subtitle2"><a href="make-cursos.html">Ver playlist completa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="cardDesejo">
+                    <div class="card__thumb1">
+                        <a href="#"><img src="imagens/play7.png" /></a>
+                    </div>
+                    <div class="card__bodyprog">
+                        <h2 class="card__title">Make para Míope</h2>
+                        <div class="card__subtitle2"><a href="make-cursos.html">Ver playlist completa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="cardDesejo">
+                    <div class="card__thumb1">
+                        <a href="#"><img src="imagens/play2.png" /></a>
+                    </div>
+                    <div class="card__bodyprog">
+                        <h2 class="card__title">Truques para Você!</h2>
+                        <div class="card__subtitle2"><a href="make-cursos.html">Ver playlist completa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="cardDesejo">
+                    <div class="card__thumb1">
+                        <a href="#"><img src="imagens/play3.png" /></a>
+                    </div>
+                    <div class="card__bodyprog">
+                        <h2 class="card__title">Trends de Produtos</h2>
+                        <div class="card__subtitle2"><a href="make-cursos.html">Ver playlist completa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="cardDesejo">
+                    <div class="card__thumb1">
+                        <a href="#"><img src="imagens/play10.png" /></a>
+                    </div>
+                    <div class="card__bodyprog">
+                        <h2 class="card__title">Beleza em 1 Segredo</h2>
+                        <div class="card__subtitle2"><a href="make-cursos.html">Ver playlist completa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="cardDesejo">
+                    <div class="card__thumb1">
+                        <a href="#"><img src="imagens/play11.png" /></a>
+                    </div>
+                    <div class="card__bodyprog">
+                        <h2 class="card__title">Rotina de Cuidados</h2>
+                        <div class="card__subtitle2"><a href="make-cursos.html">Ver playlist completa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="cardDesejo">
+                    <div class="card__thumb1">
+                        <a href="#"><img src="imagens/play12.png" /></a>
+                    </div>
+                    <div class="card__bodyprog">
+                        <h2 class="card__title">Mulheres na Beleza</h2>
+                        <div class="card__subtitle2"><a href="make-cursos.html">Ver playlist completa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="cardDesejo">
+                    <div class="card__thumb1">
+                        <a href="#"><img src="imagens/play13.png" /></a>
+                    </div>
+                    <div class="card__bodyprog">
+                        <h2 class="card__title">Make em Promo!</h2>
+                        <div class="card__subtitle2"><a href="make-cursos.html">Ver playlist completa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="cardDesejo">
+                    <div class="card__thumb1">
+                        <a href="#"><img src="imagens/play14.png" /></a>
+                    </div>
+                    <div class="card__bodyprog">
+                        <h2 class="card__title">Sua Paleta Favorita</h2>
+                        <div class="card__subtitle2"><a href="make-cursos.html">Ver playlist completa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="cardDesejo">
+                    <div class="card__thumb1">
+                        <a href="#"><img src="imagens/play15.png" /></a>
+                    </div>
+                    <div class="card__bodyprog">
+                        <h2 class="card__title">Cuidados Essenciais</h2>
+                        <div class="card__subtitle2"><a href="make-cursos.html">Ver playlist completa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="cardDesejo">
+                    <div class="card__thumb1">
+                        <a href="#"><img src="imagens/play16.png" /></a>
+                    </div>
+                    <div class="card__bodyprog">
+                        <h2 class="card__title">Skincare Avançado</h2>
+                        <div class="card__subtitle2"><a href="make-cursos.html">Ver playlist completa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- chatbox -->
+
+    <div id="container-floating">
+        <div class="nd4 nds"><img class="reminder">
+            <p class="letter"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></p>
+        </div>
+
+        <div class="nd3 nds"><img class="reminder">
+            <p class="letter"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></p>
+        </div>
+
+        <div class="nd1 nds">
+            <p class="letter"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i></p>
+        </div>
+
+        <div id="floating-button">
+            <p class="plus">+</p>
+            <i class="fa-solid fa-pen edit" style="color: #8B00F5;"></i>
+        </div>
+    </div>
+
+    <!-- rodapé -->
+    <footer>
+        <div class="container-fluid rodape">
+
+            <div class="row ">
+                <div class="col-md-4 logo-rodape">
+                    <b><a href="#">Cursando</a></b>
+                    <p>Milhares de vídeo-aulas em um único espaço. A qualquer hora, em qualquer lugar! Cursando,
+                        sua
+                        plataforma EAD!</p>
+                </div>
+                <div class="col-md-2 s-1">
+
+                    <ul>
+                        <li>
+                            <h5>Cursos</h5>
+                        </li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Tecnologia</a></li>
+                        <li><a href="#">Vestibular</a></li>
+                        <li><a href="#">Economia</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 s-1">
+
+                    <ul>
+                        <li>
+                            <h5>Links úteis</h5>
+                        </li>
+                        <li><a href="#">Sua conta</a></li>
+                        <li><a href="#">Seja afiliado!</a></li>
+                        <li><a href="#">Prêmios</a></li>
+                        <li><a href="#">Ajuda</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 ">
+                    <form class="subscribe">
+                        <h5>Faça parte da nossa comunidade!</h5>
+                        <input type="text" placeholder="Digite seu e-mail">
+                        <button>Inscreva-se!</button>
+                    </form>
+                </div>
+                <div class="col-md-12 border-top Cr">
+                    <p>© 2023 Companhia, Inc. Todos os direitos reservados.</p>
+                    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                        <li class="ms-3"><a href="#"><img src="imagens/facebook.png" width="24" alt=""></a></li>
+                        <li class="ms-3"><a href="#"><img src="imagens/instagram.png" width="24" alt=""></a>
+                        </li>
+                        <li class="ms-3"><a href="#"><img src="imagens/tiktok.png" width="24" alt=""></a></li>
+                        <li class="ms-3"><a href="#"><img src="imagens/youtube.png" width="28" alt=""></a></li>
+                        <li class="ms-3"><a href="#"><img src="imagens/linkedin.png" width="24" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,2461 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todos os cursos | Vitória Seixas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./imagens/logo-topoc.png">
+    <link rel="stylesheet" href="css/make-cursos.css">
+</head>
+
+<body>
+
+    <!--navbar offcanva-->
+    <nav class="navbar bg-body-tertiary fixed-top nav-off-canva ">
+        <div class="container">
+            <a class="navbar-brand" href="cursos.html">Cursando</a>
+
+
+            <input class="barra-pesquisa open-search" type="text" placeholder="Pesquisar...">
+            <i class="fa fa-times close-search fa-lg barra-pesquisa open-search" aria-hidden="true"
+                style="color: #8B00F5;" onclick="fecharP(this)"></i>
+
+            <i class="fa fa-search lupa-search" aria-hidden="true" style="color: #8B00F5;" onclick="abrirP(this)"></i>
+            <i class="fa fa-shopping-cart cart-icon" aria-hidden="true" style="color: #8B00F5;" data-bs-toggle="modal"
+                data-bs-target="#exampleModal"><span class="cart-nav" id="itemsCarrinho"
+                    data-totalitems="0">0</span></i>
+            <i class="fa fa-bars navbar-toggler fa-lg" style="color: #8B00F5;" aria-hidden="true" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation"></i>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Cursando</h5>
+
+                    <i class="fa fa-times fa-lg" style="color: white;" type="button" data-bs-dismiss="offcanvas"
+                        aria-label="Close" aria-hidden="true"></i>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item navItemAtivo">
+                            <a class="nav-link navLinkAtivo" aria-current="page" href="cursos.html"><i
+                                    class='bx bx-grid-alt'></i>Todos os cursos</a>
+                        </li>
+
+                        <ul class="conteiner-profile">
+                            <li class="nav-item img-profile">
+                                <img src="imagens/orient1.png">
+                                <h5>Vitória Seixas</h5>
+                                <h6>Artist | Makeup</h6>
+                            </li>
+                            <div class="border-bottom"></div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="minha-análise.html"><i class="fa fa-tasks"
+                                        aria-hidden="true"></i>Meus
+                                    cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="orientador1.html"><i class='bx bx-user'></i>Perfil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dashboard.html"><i
+                                        class='bx bx-pie-chart-alt-2'></i>Análise</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class='bx bx-cog'></i>Configurações</a>
+                            </li>
+                            <div class="border-bottom"></div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index (1).html"><i class="fa fa-sign-out"
+                                        style="color: white;"></i>Sair</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- filtros -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- tab -->
+                <ul class="tabs-box">
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content">
+        <div class="parte-principal-cursos-conteiner tab-pass tabAtivo">
+
+            <!-- banner + descrição -->
+
+            <!-- carrossel cards -->
+            <div class="container conteiner-carrossel ">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12">
+                        <a href="orientador1.html"><img src="imagens/banner-gif.gif" class="section-name2"></a>
+                        <h1 class="section-name">Mais Vendidos</h1>
+
+                        <section class="cardsPrincipal">
+
+                            <div class="swiper mySwiper container">
+                                <div class="swiper-wrapper content">
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curso1.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class="icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Skincare</a></div>
+                                            <h2 class="card__title"><a href="#">Skincare Avançado</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com um curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (300)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curso2.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Make</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 59,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Domine a arte da beleza e descubra seu potencial de estilo. <br>
+                                                <i class="fa-solid fa-video size"></i> 10 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 24h <br>
+                                                5.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curso3.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Estética</a></div>
+                                            <h2 class="card__title"><a href="#">Segredos da Beleza</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 29,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Conheça o mistério encantador que reside em todos nós. <br>
+                                                <i class="fa-solid fa-video size"></i> 5 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 8h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (550)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curso4.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Skincare</a></div>
+                                            <h2 class="card__title"><a href="#">Produtos Premium</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 19,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                onclick="pegaProduto(this);listaPagamento(this)">
+                                                </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Produtos premium são sinônimos de qualidade, eleve sua experiência. <br>
+                                                <i class="fa-solid fa-video size"></i> 9 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 10h <br>
+                                                5.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i> (400)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curso5.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Verdades e Mitos</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 49,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Os segredos da maquiagem - separando a verdade dos mitos. <br>
+                                                <i class="fa-solid fa-video size"></i> 11 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 20h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (849)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curso6.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Make</a></div>
+                                            <h2 class="card__title"><a href="#">Indústria da Beleza </a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 79,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Conheça como a indústria da beleza movimenta a economia. <br>
+                                                <i class="fa-solid fa-video size"></i> 20 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 30h <br>
+                                                5.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i> (995)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curso7.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Estética</a></div>
+                                            <h2 class="card__title"><a href="#">Receita do Sucesso</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 33,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Ofereça serviços de qualidade para prosperar. <br>
+                                                <i class="fa-solid fa-video size"></i> 5 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 7h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (200)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curso8.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Make</a></div>
+                                            <h2 class="card__title"><a href="#">A Influência da Make</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 18,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                A maquiagem molda padrões de beleza em nossa sociedade. <br>
+                                                <i class="fa-solid fa-video size"></i> 8 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 16h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (366)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curso9.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Skincare</a></div>
+                                            <h2 class="card__title"><a href="#">O Segredo Para Acne</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 55,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                O segredo para controlar a acne está nos cuidados com a pele. <br>
+                                                <i class="fa-solid fa-video size"></i> 5 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 13h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (991)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--deixar os botões escondidos no mobile-->
+                            <div id="nextOne" class="swiper-button-next"></div>
+                            <div id="prevOne" class="swiper-button-prev"></div>
+                            <div id="pagOne" class="swiper-pagination"></div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- carrossel cards 2-->
+            <div class="container conteiner-carrossel">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <h1 class="section-name">Maquiagem</h1>
+                        <section class="cardsPrincipal">
+
+                            <div class="swiper mySwiper2 container">
+                                <div class="swiper-wrapper content">
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/make1.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Make</a></div>
+                                            <h2 class="card__title"><a href="#">Técnicas Criativas</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 56,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Explore a arte e a imaginação, criando visuais únicos. <br>
+                                                <i class="fa-solid fa-video size"></i> 9 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 21h <br>
+                                                5.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i> (999)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/make2.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Make</a></div>
+                                            <h2 class="card__title"><a href="#">Design Sobrancelhas</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 29,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Aprenda dominar as técnicas de design de sobrancelhas. <br>
+                                                <i class="fa-solid fa-video size"></i> 5 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 13h <br>
+                                                5.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i> (600)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/make4.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Make</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Artística</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 74,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Explore cores, texturas e técnicas para sua maquiagem. <br>
+                                                <i class="fa-solid fa-video size"></i> 3 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 5h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (267)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/make5.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Make</a></div>
+                                            <h2 class="card__title"><a href="#">Peles Diversas - Dicas</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 39,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Explore a maquiagem em peles diversas em possibilidades. <br>
+                                                <i class="fa-solid fa-video size"></i> 10 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 20h <br>
+                                                5.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i> (431)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/make6.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Make</a></div>
+                                            <h2 class="card__title"><a href="#">Aprenda o Básico</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 14,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Aprenda a linguagem secreta das cores e texturas. <br>
+                                                <i class="fa-solid fa-video size"></i> 2 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 5h <br>
+                                                3.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (99)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/make7.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Make</a></div>
+                                            <h2 class="card__title"><a href="#">Sua Rotina Importa</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 74,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Desvendar os segredos da maquiagem na sua rotina diária. <br>
+                                                <i class="fa-solid fa-video size"></i> 17 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 30h <br>
+                                                5.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i> (500)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/make8.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Make</a></div>
+                                            <h2 class="card__title"><a href="#">Make Alternativa</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 53,90</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Cada traço é uma forma de arte, transforme seu rosto em uma tela. <br>
+                                                <i class="fa-solid fa-video size"></i> 4 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 8h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (789)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/make9.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Make</a></div>
+                                            <h2 class="card__title"><a href="#">Descubra a Mágica</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 84,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Desvende os segredos da maquiagem em um reino mágico. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                5.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i> (302)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/make3.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Make</a></div>
+                                            <h2 class="card__title"><a href="#">Consultoria de Beleza</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 88,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                onclick="pegaProduto(this);listaPagamento(this)">
+                                                </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Consultoria é como ter um guia pessoal pelo universo da beleza. <br>
+                                                <i class="fa-solid fa-video size"></i> 13 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 24h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i> (889)
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="nextTwo" class="swiper-button-next"></div>
+                            <div id="prevTwo" class="swiper-button-prev"></div>
+                            <div id="pagTwo" class="swiper-pagination"></div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- carrossel cards 3-->
+            <div class="container conteiner-carrossel">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <h1 class="section-name">Skincare</h1>
+                        <section class="cardsPrincipal">
+                            <div class="swiper mySwiper3 container">
+                                <div class="swiper-wrapper content">
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/cursos-final1.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Skincare</a></div>
+                                            <h2 class="card__title"><a href="#">Trends de Produtos</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 55,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Trends de produtos de maquiagem estão sempre evoluindo, descubra! <br>
+                                                <i class="fa-solid fa-video size"></i> 3 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 6h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (100)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/cursos-final2.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Skincare</a></div>
+                                            <h2 class="card__title"><a href="#">Tutorial e Tudo Mais</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 19,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Os tutoriais tornam-se verdadeiros aliados na jornada da beleza. <br>
+                                                <i class="fa-solid fa-video size"></i> 1 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 3h <br>
+                                                3.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (20)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/cursos-final3.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Skincare</a></div>
+                                            <h2 class="card__title"><a href="#">Halloween Chegou!</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 44,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Halloween transcende os limites convencionais e criatividade. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                5.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i> (789)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/cursos-final4.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Skincare</a></div>
+                                            <h2 class="card__title"><a href="#">Vivências na Make</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 24,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Vivências são verdadeiros momentos de autenticidade. <br>
+                                                <i class="fa-solid fa-video size"></i> 5 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (390)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/cursos-final5.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Skincare</a></div>
+                                            <h2 class="card__title"><a href="#">Diário de Skincare</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 94,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                onclick="pegaProduto(this);listaPagamento(this)">
+                                                </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Registro íntimo de autodescoberta e criatividade. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                5.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i> (345)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/cursos-final6.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Skincare</a></div>
+                                            <h2 class="card__title"><a href="#">Cuidados Raiz</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 13,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Cuidados são as fundações de uma jornada de beleza. <br>
+                                                <i class="fa-solid fa-video size"></i> 2 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 4h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (90)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/cursos-fina7.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Skincare</a></div>
+                                            <h2 class="card__title"><a href="#">Autoria de Beleza</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 74,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Autoria de beleza é mais do que uma jornada estética. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                5.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i> (234)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/cursos-final8.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Skincare</a></div>
+                                            <h2 class="card__title"><a href="#">Na Minha Bolsa</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Dentro da minha bolsa, carrego um universo de necessidades diárias. <br>
+                                                <i class="fa-solid fa-video size"></i> 8 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 16h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (100)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/cursos-final9.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Skincare</a></div>
+                                            <h2 class="card__title"><a href="#">Minha Jornada</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 9,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                O que tem na minha bolsa - sobre tudo para você. <br>
+                                                <i class="fa-solid fa-video size"></i> 1 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 1h <br>
+                                                2.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (10)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="next3" class="swiper-button-next"></div>
+                            <div id="prev3" class="swiper-button-prev"></div>
+                            <div id="pag3" class="swiper-pagination"></div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- carrossel cards 4-->
+            <div class="container conteiner-read-more conteiner-carrossel">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <h1 class="section-name">Princípios Fundamentais</h1>
+                        <section class="cardsPrincipal">
+
+                            <div class="swiper mySwiper4 container">
+                                <div class="swiper-wrapper content">
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/cursos-final9.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                onclick="pegaProduto(this);listaPagamento(this)">
+                                                </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/cursos-final8.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/cursos-fina7.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/cursos-final6.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/cursos-final5.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                onclick="pegaProduto(this);listaPagamento(this)">
+                                                </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/cursos-final4.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/cursos-final3.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/cursos-final2.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                onclick="pegaProduto(this);listaPagamento(this)">
+                                                </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/cursos-final1.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="next4" class="swiper-button-next"></div>
+                            <div id="prev4" class="swiper-button-prev"></div>
+                            <div id="pag4" class="swiper-pagination"></div>
+                        </section>
+
+                    </div>
+                </div>
+
+
+                <!-- carrossel cards 5-->
+
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <h1 class="section-name">Mercado da Beleza</h1>
+                        <section class="cardsPrincipal">
+
+                            <div class="swiper mySwiper5 container">
+                                <div class="swiper-wrapper content">
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curso9.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                onclick="pegaProduto(this);listaPagamento(this)">
+                                                </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curso8.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curso7.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curso6.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curso5.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curso4.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curso3.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curso2.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/curso1.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="next5" class="swiper-button-next"></div>
+                            <div id="prev5" class="swiper-button-prev"></div>
+                            <div id="pag5" class="swiper-pagination"></div>
+                        </section>
+
+                    </div>
+                </div>
+
+                <!-- carrossel cards 6-->
+
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <h1 class="section-name">Estética</h1>
+                        <section class="cardsPrincipal">
+
+                            <div class="swiper mySwiper6 container">
+                                <div class="swiper-wrapper content">
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/make9.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/make8.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/make7.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/make6.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/make5.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/make4.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                onclick="pegaProduto(this);listaPagamento(this)">
+                                                </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/make3.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/make2.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <div class="card__thumb">
+                                            <a href="#"><img src="imagens/make1.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card__date__day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho" style="color: #8B00F5;"
+                                                    onclick="pegaProduto(this);listaPagamento(this)">
+                                                    </i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="next6" class="swiper-button-next"></div>
+                            <div id="prev6" class="swiper-button-prev"></div>
+                            <div id="pag6" class="swiper-pagination"></div>
+                        </section>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <center> <button type="button" id="btnLerMais" class="ler-mais-btn">Veja mais</button></center>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- rodapé -->
+            <footer>
+                <div class="container-fluid rodape">
+
+                    <div class="row ">
+                        <div class="col-md-4 logo-rodape">
+                            <b><a href="#">Cursando</a></b>
+                            <p>Milhares de vídeo-aulas em um único espaço. A qualquer hora, em qualquer lugar! Cursando,
+                                sua
+                                plataforma EAD!</p>
+                        </div>
+                        <div class="col-md-2 s-1">
+
+                            <ul>
+                                <li>
+                                    <h5>Cursos</h5>
+                                </li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Tecnologia</a></li>
+                                <li><a href="#">Vestibular</a></li>
+                                <li><a href="#">Economia</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 s-1">
+
+                            <ul>
+                                <li>
+                                    <h5>Links úteis</h5>
+                                </li>
+                                <li><a href="#">Sua conta</a></li>
+                                <li><a href="#">Seja afiliado!</a></li>
+                                <li><a href="termos.html">Termos de privacidade</a></li>
+                                <li><a href="#">Ajuda</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 ">
+                            <form class="subscribe">
+                                <h5>Faça parte da nossa comunidade!</h5>
+                                <input type="text" placeholder="Digite seu e-mail">
+                                <button>Inscreva-se!</button>
+                            </form>
+                        </div>
+                        <div class="col-md-12 border-top Cr">
+                            <p>© 2023 Companhia, Inc. Todos os direitos reservados.</p>
+                            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                                <li class="ms-3"><a href="#"><img src="imagens/facebook.png" width="24" alt=""></a></li>
+                                <li class="ms-3"><a href="#"><img src="imagens/instagram.png" width="24" alt=""></a>
+                                </li>
+                                <li class="ms-3"><a href="#"><img src="imagens/tiktok.png" width="24" alt=""></a></li>
+                                <li class="ms-3"><a href="#"><img src="imagens/youtube.png" width="28" alt=""></a></li>
+                                <li class="ms-3"><a href="#"><img src="imagens/linkedin.png" width="24" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+
+        
+
+        <!-- modal carrinho -->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="modal fade" style="z-index: 99999;" id="exampleModal" tabindex="1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Carrinho de compras</h1>
+                                    <button type="button" class="btn-close modal-close" data-bs-dismiss="modal"
+                                        aria-label="Close" style="color: #8B00F5 !important;"></button>
+
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-9 lg-9">
+                                                <div class="table" id="tabelaProdutos">
+
+                                                    <div class="tabelaCorpo" id="tabelaCorpo">
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 lg-3">
+                                                <div class="right_side_total">
+                                                    <div>Total: <span id="valorTotal">R$ 0.00</span></div>
+                                                    <button type="button" class="btn btn-primary mf_btn2"
+                                                        data-bs-target="#exampleModalToggle2"
+                                                        data-bs-toggle="modal">Finalizar compra</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary mf_btn1"
+                                        data-bs-dismiss="modal">Fechar</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal pagamento -->
+
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Pagamento</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <i class="fa-solid fa-arrow-left fa-xl icon_btn_voltar" data-bs-target="#exampleModal"
+                                    data-bs-toggle="modal"></i>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-9 lg-9">
+
+                                                <h3 style="color: #340c53;">Forma de Pagamento</h3>
+                                                <ul class="nav nav-pills nav_tab_cart mb-3" id="pills-tab"
+                                                    role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link tab-cart active" id="pills-home-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#pills-home"
+                                                            type="button" role="tab" aria-controls="pills-home"
+                                                            aria-selected="true" onclick="resetarform()"><i
+                                                                class="fa-solid fa-credit-card fa-xl "></i>Cartão de
+                                                            crédito/débito</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link tab-cart" id="pills-profile-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                                            type="button" role="tab" aria-controls="pills-profile"
+                                                            aria-selected="false" onclick="resetarform()"><i
+                                                                class="fa-solid fa-barcode fa-xl"></i>Boleto
+                                                            bancário</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link tab-cart" id="pills-contact-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                                            type="button" role="tab" aria-controls="pills-contact"
+                                                            aria-selected="false" onclick="resetarform()"><i
+                                                                class="fa-brands fa-pix fa-xl"></i>Pix</button>
+                                                    </li>
+
+                                                </ul>
+                                                <div class="tab-content form_pagamento" id="pills-tabContent">
+                                                    <div class="tab-pane fade show active" id="pills-home"
+                                                        role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                                        <form id="formulario">
+                                                            <div class="row">
+                                                                <div class="mb-3">
+                                                                    <label for="formGroupExampleInput"
+                                                                        class="form-label ">E-mail</label>
+                                                                    <input type="text" class="form-control inputEmail1"
+                                                                        id="formGroupExampleInput" placeholder="E-mail">
+                                                                </div>
+
+                                                                <div class="col">
+                                                                    <label for="formGroupExampleInput"
+                                                                        class="form-label">Nome no cartão</label>
+                                                                    <input type="text" class="form-control nomeCard"
+                                                                        placeholder="Nome no cartão"
+                                                                        aria-label="First name">
+                                                                </div>
+                                                                <div class="col">
+                                                                    <label for="formGroupExampleInput"
+                                                                        class="form-label">Número do cartão</label>
+                                                                    <input type="text" class="form-control numCard"
+                                                                        placeholder="Número do cartão"
+                                                                        aria-label="Last name" maxlength="16"
+                                                                        oninput="noLetter(this)">
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="row pt_baixo_form">
+                                                                <div class="col">
+                                                                    <label for="formGroupExampleInput"
+                                                                        class="form-label">Data de
+                                                                        vencimento</label>
+                                                                    <input type="date" class="form-control dataVenc"
+                                                                        placeholder="MM/AA" aria-label="First name">
+                                                                </div>
+                                                                <div class="col">
+                                                                    <label for="formGroupExampleInput"
+                                                                        class="form-label ">Cvv (Código de
+                                                                        segurança)</label>
+                                                                    <input type="text" class="form-control cvv"
+                                                                        placeholder="Cvv" aria-label="Last name"
+                                                                        maxlength="3" oninput="noLetter(this)">
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                                        aria-labelledby="pills-profile-tab" tabindex="0">
+                                                        <form id="formulario2">
+                                                            <div class="row">
+                                                                <div class="mb-3">
+                                                                    <label for="formGroupExampleInput"
+                                                                        class="form-label ">E-mail</label>
+                                                                    <input type="text" class="form-control inputEmail2"
+                                                                        id="formGroupExampleInput" placeholder="E-mail">
+                                                                </div>
+
+                                                                <div class="mb-3">
+                                                                    <label for="formGroupExampleInput"
+                                                                        class="form-label">CPF/CNPJ</label>
+                                                                    <input type="text" class="form-control cpf1"
+                                                                        id="formGroupExampleInput"
+                                                                        placeholder="CPF/CNPJ"
+                                                                        oninput="mascaraCPF(this)">
+                                                                </div>
+                                                                <p>Para concluir sua transação, iremos lhe enviar um
+                                                                    e-mail,
+                                                                    possibilanto a impressão ou o pagamento online
+                                                                    do
+                                                                    boleto.</p>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                                        aria-labelledby="pills-contact-tab" tabindex="0">
+                                                        <form id="formulario3">
+                                                            <div class="row">
+                                                                <div class="mb-3">
+                                                                    <label for="formGroupExampleInput"
+                                                                        class="form-label">E-mail</label>
+                                                                    <input type="text" class="form-control inputEmail3"
+                                                                        id="formGroupExampleInput" placeholder="E-mail">
+                                                                </div>
+
+                                                                <div class="mb-3">
+                                                                    <label for="formGroupExampleInput"
+                                                                        class="form-label">CPF/CNPJ</label>
+                                                                    <input type="text" class="form-control cpf2"
+                                                                        id="formGroupExampleInput"
+                                                                        placeholder="CPF/CNPJ"
+                                                                        oninput="mascaraCPF(this)">
+                                                                </div>
+                                                                <p>Para concluir sua transação, iremos lhe enviar um
+                                                                    e-mail,
+                                                                    possibilanto o pagamento via QRcode ou chave
+                                                                    pix.
+                                                                </p>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                            <div class="col-md-3 lg-3">
+                                                <div class="right_side_total total_md_2">
+                                                    <h5 style="color: #340c53;">Detalhes do pedido</h5>
+
+                                                    <div class="table" id="tabelaProdutos">
+                                                        <div class="tabelaCorpo tc_scroll" id="tabelaCorpo2">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="total_txt_md" style="background-color: white;">Total:
+                                                    </div><span style="background-color: white;" id="valorTotal2">R$
+                                                        0.00</span>
+                                                    <button type="button" class="btn btn-primary mf_btn2"
+                                                        data-bs-toggle="modal" onclick="pagamentoConcluido();">Finalizar
+                                                        compra</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary mf_btn2" data-bs-target="#exampleModalToggle"
+                                        data-bs-toggle="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- chatbox -->
+        <div id="container-floating">
+            <a href="https://web.whatsapp.com/">
+                <div class="nd4 nds"><img class="reminder">
+                    <p class="letter"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></p>
+            </a>
+        </div>
+        <a href="https://www.instagram.com/cursandotecnico/">
+            <div class="nd3 nds"><img class="reminder">
+                <p class="letter"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></p>
+            </div>
+        </a>
+        <div class="nd1 nds">
+            <a href="mailto:cursando-sac@gmail.com?Subject = Preciso%20%20de%20Atendimento">
+                <p class="letter"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i></p>
+            </a>
+        </div>
+        <div id="floating-button">
+            <p class="plus">+</p>
+            <i class="fa-solid fa-pen edit" style="color: #8B00F5;"></i>
+        </div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="js/make-cursos.js"></script>
+</body>
+
+</html>

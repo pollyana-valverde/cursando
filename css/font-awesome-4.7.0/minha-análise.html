@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/minha-analise.css">
+
+<body>
+
+    <!-- TAB -->
+    <div id="tabs" class="tabss">
+        <div class="container">
+            <h6 class="section-title h1">Meu Aprendizado</h6>
+            <div class="row">
+                <div class="col-xs-12 ">
+                    <nav class="tab-categorias" style="margin-bottom: 0.02%; margin-top: -20px;">
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                                role="tab" aria-controls="nav-home" aria-selected="true">Progresso</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                                role="tab" aria-controls="nav-profile" aria-selected="false">Lista de Desejos</a>
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                                role="tab" aria-controls="nav-contact" aria-selected="false">Certificados</a>
+                            <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about"
+                                role="tab" aria-controls="nav-about" aria-selected="false">Inscrições</a>
+                            <a class="nav-item nav-link" id="nav-learn-tab" data-toggle="tab" href="#nav-learn"
+                                role="tab" aria-controls="nav-learn" aria-selected="true">Aprendizado</a>
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CORPO TABS -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ">
+                <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+
+
+                    <!-- PROGRESSO -->
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+
+                        <!-- filtros -->
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-sm-6 col-md-3 col-lg-2">
+                                    <select class="form-control" id="filter">
+                                        <option value="all">Progresso</option>
+                                        <option value="first">Não Iniciadas</option>
+                                        <option value="second">1%-20%</option>
+                                        <option value="third">21%-40%</option>
+                                        <option value="fourth">41%-60%</option>
+                                        <option value="fifth">61%-80%</option>
+                                        <option value="sixth">81%-99%</option>
+                                        <option value="seventh">Concluídos</option>
+
+                                    </select>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3 col-lg-2">
+                                    <select class="form-control" id="filter">
+                                        <option value="all">Cursos</option>
+                                        <option value="AE">A-E</option>
+                                        <option value="FJ">F-J</option>
+                                        <option value="KO">K-O</option>
+                                        <option value="PT">P-T</option>
+                                        <option value="UZ">U-Z</option>
+
+                                    </select>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3 col-lg-2">
+                                    <select class="form-control" id="filter">
+                                        <option value="all">Orientador</option>
+                                        <option value="A-E">A-E</option>
+                                        <option value="F-J">F-J</option>
+                                        <option value="K-O">K-O</option>
+                                        <option value="P-T">P-T</option>
+                                        <option value="U-Z">U-Z</option>
+
+                                    </select>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3 col-lg-2">
+                                    <select class="form-control" id="filter">
+                                        <option value="all">Avaliados</option>
+                                        <option value="1star">1 estrela</option>
+                                        <option value="2star">2 estrelas</option>
+                                        <option value="3star">3 estrelas</option>
+                                        <option value="4star">4 estrelas</option>
+                                        <option value="5star">5 estrelas</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- line cards 1 -->
+
+                        <div class="row justify-content-evenly">
+                            <div class=" col-sm-6 col-md-4 col-lg-3">
+                                <div class="card card1 cardTodos text-center mt-2 mb-3 mx-2">
+                                    <a href="" class="imgHover"><img src="../projeto-cursando/imagens/arquitetura.png"
+                                            class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h6 class="card-title"><a href="">Os Traços da Arquitetura</a></h6>
+                                        <p class="card-text">Prof° Marco Caetano</p>
+                                        <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 3px">
+                                            <div class="progress-bar color-progress" style="width: 25%"></div>
+                                        </div>
+
+                                        <div class="star-group" style="display: flex;">
+                                            <span>25% concluido</span>
+                                            <div
+                                                class="starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                <input type="radio" id="star1" name="rating" value="1" /><label
+                                                    for="star1" title="5 estrelas"></label>
+                                                <input type="radio" id="star2" name="rating" value="2" /><label
+                                                    for="star2" title="4 estrelas"></label>
+                                                <input type="radio" id="star3" name="rating" value="3" /><label
+                                                    for="star3" title="3 estrelas"></label>
+                                                <input type="radio" id="star4" name="rating" value="4" /><label
+                                                    for="star4" title="2 estrelas"></label>
+                                                <input type="radio" id="star5" name="rating" value="5" /><label
+                                                    for="star5" title="1 estrela"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <div class="card card2 cardTodos text-center mt-2 mb-3 mx-2">
+                                    <a href="" class="imgHover"><img src="../projeto-cursando/imagens/excel.png"
+                                            class="card-img-top color-card" alt="..."></a>
+                                    <div class="card-body">
+                                        <h6 class="card-title"><a href="">Curso Avançado de Excel</a></h6>
+                                        <p class="card-text">Prof° Rosângela</p>
+
+                                        <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 3px">
+                                            <div class="progress-bar color-progress" style="width: 67%"></div>
+                                        </div>
+
+                                        <div class="star-group" style="display: flex;">
+                                            <span>67% concluido</span>
+                                            <div
+                                                class="starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                <input type="radio" id="star6" name="rating2" value="6" /><label
+                                                    for="star6" title="5 estrelas"></label>
+                                                <input type="radio" id="star7" name="rating2" value="7" /><label
+                                                    for="star7" title="4 estrelas"></label>
+                                                <input type="radio" id="star8" name="rating2" value="8" /><label
+                                                    for="star8" title="3 estrelas"></label>
+                                                <input type="radio" id="star9" name="rating2" value="9" /><label
+                                                    for="star9" title="2 estrelas"></label>
+                                                <input type="radio" id="star10" name="rating2" value="10" /><label
+                                                    for="star10" title="1 estrela"></label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <div class="card card3 cardTodos text-center mt-2 mb-3 mx-2">
+                                    <a href="" class="imgHover"><img src="../projeto-cursando/imagens/html.png"
+                                            class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h6 class="card-title"><a href="">Os Mistérios do HTML</a></h6>
+                                        <p class="card-text">Ademar dos Santos</p>
+                                        <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 3px">
+                                            <div class="progress-bar color-progress" style="width: 32%"></div>
+                                        </div>
+
+                                        <div class="star-group" style="display: flex;">
+                                            <span>32% concluido</span>
+                                            <div
+                                                class="starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                <input type="radio" id="star11" name="rating3" value="11" /><label
+                                                    for="star11" title="5 estrelas"></label>
+                                                <input type="radio" id="star12" name="rating3" value="12" /><label
+                                                    for="star12" title="4 estrelas"></label>
+                                                <input type="radio" id="star13" name="rating3" value="13" /><label
+                                                    for="star13" title="3 estrelas"></label>
+                                                <input type="radio" id="star14" name="rating3" value="14" /><label
+                                                    for="star14" title="2 esrelas"></label>
+                                                <input type="radio" id="star15" name="rating3" value="15" /><label
+                                                    for="star15" title="1 estrela"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <div class="card card4 cardTodos text-center mt-2 mb-3 mx-2">
+                                    <a href="" class="imgHover"><img src="../projeto-cursando/imagens/culinária.png"
+                                            class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <h6 class="card-title"><a href="">Receitas de Resturante!</a></h6>
+                                        <p class="card-text">Camila Almeida Bastos</p>
+                                        <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 3px">
+                                            <div class="progress-bar color-progress" style="width: 0%"></div>
+                                        </div>
+
+                                        <div class="star-group" style="display: flex;">
+                                            <span>INICIAR CURSO</span>
+                                            <div
+                                                class="starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                <input type="radio" id="star16" name="rating4" value="16" /><label
+                                                    for="star16" title="5 estrelas"></label>
+                                                <input type="radio" id="star17" name="rating4" value="17" /><label
+                                                    for="star17" title="4 estrelas"></label>
+                                                <input type="radio" id="star18" name="rating4" value="18" /><label
+                                                    for="star18" title="3 estrelas"></label>
+                                                <input type="radio" id="star19" name="rating4" value="19" /><label
+                                                    for="star19" title="2 estrelas"></label>
+                                                <input type="radio" id="star20" name="rating4" value="20" /><label
+                                                    for="star20" title="1 estrela"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <!-- PaginatioN -->
+                            <div class="demo paginacao">
+                                <nav class="pagination-outer" aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a href="#" class="page-link" aria-label="Previous">
+                                                <span aria-hidden="true">«</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link" aria-label="Next">
+                                                <span aria-hidden="true">»</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- End Progresso -->
+
+
+                    <!-- LISTA DE DESEJOS -->
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class=" col-sm-12 col-md-6 col-lg-4">
+                                    <article class="cardDesejo">
+                                        <header class="card__thumb">
+                                            <a href="#"><img
+                                                    src="https://i.pinimg.com/1200x/c6/f7/70/c6f7705f55a84505b8d48d6763785ed2.jpg" /></a>
+                                        </header>
+                                        <date class="card__date">
+                                            <span class="card__date__day">
+
+                                                <div class=" icones-clicados">
+
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart" id="coracao3"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+
+                                            </span>
+                                        </date>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho"
+                                                    style="color: #8B00F5;"></i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </article>
+
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <article class="cardDesejo">
+                                        <header class="card__thumb">
+                                            <a href="#"><img
+                                                    src="https://i.pinimg.com/1200x/c6/f7/70/c6f7705f55a84505b8d48d6763785ed2.jpg" /></a>
+                                        </header>
+                                        <date class="card__date">
+                                            <span class="card__date__day">
+
+                                                <div class=" icones-clicados">
+
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart" id="coracao3"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+
+                                            </span>
+                                        </date>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho"
+                                                    style="color: #8B00F5;"></i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <article class="cardDesejo">
+                                        <header class="card__thumb">
+                                            <a href="#"><img
+                                                    src="https://i.pinimg.com/1200x/c6/f7/70/c6f7705f55a84505b8d48d6763785ed2.jpg" /></a>
+                                        </header>
+                                        <date class="card__date">
+                                            <span class="card__date__day">
+
+                                                <div class=" icones-clicados">
+
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart" id="coracao3"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+
+                                            </span>
+                                        </date>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho"
+                                                    style="color: #8B00F5;"></i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+
+
+                            <!-- linha 2 -->
+
+         <div class="row">
+                                <div class=" col-sm-12 col-md-6 col-lg-4">
+                                    <article class="cardDesejo">
+                                        <header class="card__thumb">
+                                            <a href="#"><img
+                                                    src="https://i.pinimg.com/1200x/c6/f7/70/c6f7705f55a84505b8d48d6763785ed2.jpg" /></a>
+                                        </header>
+                                        <date class="card__date">
+                                            <span class="card__date__day">
+
+                                                <div class=" icones-clicados">
+
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart" id="coracao3"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+
+                                            </span>
+                                        </date>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho"
+                                                    style="color: #8B00F5;"></i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </article>
+
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <article class="cardDesejo">
+                                        <header class="card__thumb">
+                                            <a href="#"><img
+                                                    src="https://i.pinimg.com/1200x/c6/f7/70/c6f7705f55a84505b8d48d6763785ed2.jpg" /></a>
+                                        </header>
+                                        <date class="card__date">
+                                            <span class="card__date__day">
+
+                                                <div class=" icones-clicados">
+
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart" id="coracao3"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+
+                                            </span>
+                                        </date>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho"
+                                                    style="color: #8B00F5;"></i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <article class="cardDesejo">
+                                        <header class="card__thumb">
+                                            <a href="#"><img
+                                                    src="https://i.pinimg.com/1200x/c6/f7/70/c6f7705f55a84505b8d48d6763785ed2.jpg" /></a>
+                                        </header>
+                                        <date class="card__date">
+                                            <span class="card__date__day">
+
+                                                <div class=" icones-clicados">
+
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart" id="coracao3"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+
+                                            </span>
+                                        </date>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Beleza</a></div>
+                                            <h2 class="card__title"><a href="#">Maquiagem Mastery</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artist Makeup</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho"
+                                                    style="color: #8B00F5;"></i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme sua pele e autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <!-- End Lista de Desejos-->
+
+
+
+                    <!-- CERTIFICADOS -->
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="container">
+
+                            <!-- linha 1 -->
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box">
+                                        <img src="imagens/certificado1.png">
+                                        <div class="box-content">
+                                            <h3 class="title">Arquitetura</h3>
+                                            <span class="post">Rosângela Lima</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a
+                                                    href="file:///E:/TRABALHOS%20DE%20DEV/projeto-cursando/imagens/certificado1.png"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box">
+                                        <img src="imagens/certificado2.png">
+                                        <div class="box-content">
+                                            <h3 class="title">Culinária</h3>
+                                            <span class="post">Arnaldo Sanxes</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a href="D:\TRABALHOS DE DEV\projeto-cursando\imagens\certificado2.png"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box">
+                                        <img src="imagens/certificado3.png">
+                                        <div class="box-content">
+                                            <h3 class="title">Colorimetria</h3>
+                                            <span class="post">Roberta Mendes</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a href="D:\TRABALHOS DE DEV\projeto-cursando\imagens\certificado3.png"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box">
+                                        <img src="imagens/certificado4.png">
+                                        <div class="box-content">
+                                            <h3 class="title">HTML</h3>
+                                            <span class="post">Miguel castro</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a href="D:\TRABALHOS DE DEV\projeto-cursando\imagens\certificado4.png"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <!-- linha 2 -->
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box">
+                                        <img src="imagens/certificado5.png">
+                                        <div class="box-content">
+                                            <h3 class="title">Arquitetura</h3>
+                                            <span class="post">Rosângela Lima</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a href="D:\TRABALHOS DE DEV\projeto-cursando\imagens\certificado5.png"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box">
+                                        <img src="imagens/certificado6.png">
+                                        <div class="box-content">
+                                            <h3 class="title">Culinária</h3>
+                                            <span class="post">Arnaldo Sanxes</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a href="D:\TRABALHOS DE DEV\projeto-cursando\imagens\certificado6.png"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box">
+                                        <img src="imagens/certificado7.png">
+                                        <div class="box-content">
+                                            <h3 class="title">Colorimetria</h3>
+                                            <span class="post">Roberta Mendes</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a href="D:\TRABALHOS DE DEV\projeto-cursando\imagens\certificado7.png"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box">
+                                        <img src="imagens/certificado8.png">
+                                        <div class="box-content">
+                                            <h3 class="title">HTML</h3>
+                                            <span class="post">Miguel castro</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a href="D:\TRABALHOS DE DEV\projeto-cursando\imagens\certificado8.png"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- linha 3 -->
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box">
+                                        <img src="imagens/certificado9.png">
+                                        <div class="box-content">
+                                            <h3 class="title">Arquitetura</h3>
+                                            <span class="post">Rosângela Lima</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a href="D:\TRABALHOS DE DEV\projeto-cursando\imagens\certificado9.png"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box">
+                                        <img src="imagens/certificado10.png" style="border-radius: 5px solid violet;">
+                                        <div class="box-content">
+                                            <h3 class="title">Culinária</h3>
+                                            <span class="post">Arnaldo Sanxes</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a
+                                                    href="D:\TRABALHOS DE DEV\projeto-cursando\imagens\certificado10.png"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Certificados-->
+
+
+
+                    <!-- INSCRIÇÃO -->
+                    <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                        Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim
+                        occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit
+                        dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse
+                        consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod
+                        tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa
+                        non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis
+                        occaecat ex.
+                    </div>
+                    <!-- End Inscrição-->
+
+
+                    <!-- APRENDIZADO -->
+                    <div class="tab-pane fade" id="nav-learn" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim
+                        occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit
+                        dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse
+                        consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod
+                        tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa
+                        non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis
+                        occaecat ex.
+                    </div>
+
+                    <!-- End Aprendizado -->
+
+
+                    <!-- Aprendizado -->
+                    <div class="tab-pane fade" id="nav-learn" role="tabpanel" aria-labelledby="nav-about-tab">
+                        Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim
+                        occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit
+                        dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse
+                        consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod
+                        tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa
+                        non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis
+                        occaecat ex.
+                    </div>
+
+                    <!-- End Aprendizado  -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./END TAB -->
+
+
+
+
+
+    <script src="js/minha-analise.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

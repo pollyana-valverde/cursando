@@ -1,0 +1,2021 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <title>Minha Análise</title>
+    <link rel="shortcut icon" href="./imagens/logo-topoc.png">
+    <link rel="stylesheet" href="css/minha-analise.css">
+
+<body>
+
+
+     <!--navbar offcanva-->
+  <nav class="navbar bg-body-tertiary fixed-top nav-off-canva ">
+    <div class="container">
+      <a class="navbar-brand" href="cursos.html">Cursando</a>
+
+
+      <input class="barra-pesquisa open-search" type="text" placeholder="Pesquisar...">
+      <i class="fa fa-times close-search fa-lg barra-pesquisa open-search" aria-hidden="true" style="color: #8B00F5;"
+        onclick="fecharP(this)"></i>
+
+      <i class="fa fa-search lupa-search" aria-hidden="true" style="color: #8B00F5;" onclick="abrirP(this)"></i>
+      <i class="fa fa-shopping-cart cart-icon" aria-hidden="true" style="color: #8B00F5;" data-bs-toggle=""
+        data-bs-target="#exampleModal"><span class="cart-nav" id="itemsCarrinho" data-totalitems="0">0</span></i>
+      <i class="fa fa-bars navbar-toggler fa-lg" style="color: #8B00F5;" aria-hidden="true" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation"></i>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Cursando</h5>
+
+          <i class="fa fa-times fa-lg" style="color: white;" type="button" data-bs-dismiss="offcanvas"
+            aria-label="Close" aria-hidden="true"></i>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item navItemAtivo">
+              <a class="nav-link navLinkAtivo" aria-current="page" href="cursos.html"><i class='bx bx-grid-alt'></i>Todos os
+                cursos</a>
+            </li>
+
+            <ul class="conteiner-profile">
+                <li class="nav-item img-profile">
+                    <img src="imagens/orient1.png">
+                    <h5>Vitória Seixas</h5>
+                    <h6>Artist | Makeup</h6>
+                </li>
+                <div class="border-bottom"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="minha-análise.html"><i class="fa fa-tasks"
+                            aria-hidden="true"></i>Meu aprendizado</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="orientador1.html"><i class='bx bx-user'></i>Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html"><i
+                            class='bx bx-pie-chart-alt-2'></i>Análise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class='bx bx-cog'></i>Configurações</a>
+                </li>
+                <div class="border-bottom"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="index (1).html"><i class="fa fa-sign-out"
+                            style="color: white;"></i>Sair</a>
+                </li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <!-- TAB -->
+    <div id="tabs" class="tabss">
+        <div class="container header-mobile">
+            <h6 class="section-title h1">Meu Aprendizado</h6>
+            <div class="row">
+                <div class="col-xs-12 ">
+                    <nav class="tab-categorias" style="margin-bottom: 0.02%; margin-top: -20px;">
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                                role="tab" aria-controls="nav-home" aria-selected="true">Progresso</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                                role="tab" aria-controls="nav-profile" aria-selected="false">Lista de Desejos</a>
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                                role="tab" aria-controls="nav-contact" aria-selected="false">Certificados</a>
+                            <a class="nav-item nav-link" id="nav-learn-tab" data-toggle="tab" href="#nav-learn"
+                                role="tab" aria-controls="nav-learn" aria-selected="true">Ferramentas de Aprendizado</a>
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CORPO TABS -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ">
+                <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+
+
+                    <!-- PROGRESSO -->
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+
+
+                        <!-- line cards 1 -->
+
+                        <div class="container" style="margin-top: -5%;">
+                            <div class="row justify-content-evenly" style="margin-top: 20%;">
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb1">
+                                            <a href="info-cursos.html"><img
+                                                    src="imagens/excel-img.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__bodyprog">
+                                            <div class="card__category"><a href="#">Tecnologia</a></div>
+                                            <h2 class="card__title"><a href="info-cursos.html">Excel Básico</a></h2>
+                                            <div class="card__subtitle card__subtitle2">Marcus Edson | Desenvolvedor
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 4px">
+                                                <div class="progress-bar color-progress" style="width: 25%"></div>
+                                            </div>
+
+                                            <div class="star-group">
+                                                <span>25% concluido</span>
+                                                <div
+                                                    class="starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                    <input type="radio" id="star1" name="rating" value="1" /><label
+                                                        for="star1" title="5 estrelas"></label>
+                                                    <input type="radio" id="star2" name="rating" value="2" /><label
+                                                        for="star2" title="4 estrelas"></label>
+                                                    <input type="radio" id="star3" name="rating" value="3" /><label
+                                                        for="star3" title="3 estrelas"></label>
+                                                    <input type="radio" id="star4" name="rating" value="4" /><label
+                                                        for="star4" title="2 estrelas"></label>
+                                                    <input type="radio" id="star5" name="rating" value="5" /><label
+                                                        for="star5" title="1 estrela"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb1">
+                                            <a href="#"><img
+                                                    src="imagens/vestibular/42novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__bodyprog">
+                                            <div class="card__category"><a href="#">Vestibular</a></div>
+                                            <h2 class="card__title"><a href="#">Estudo Interativo</a></h2>
+                                            <div class="card__subtitle card__subtitle2">Gabi Lima | Psicóloga
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 4px">
+                                                <div class="progress-bar color-progress" style="width: 88%"></div>
+                                            </div>
+
+                                            <div class="star-group">
+                                                <span>88% concluido</span>
+                                                <div
+                                                    class="starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                    <input type="radio" id="star6" name="rating2" value="6" /><label
+                                                        for="star6" title="5 estrelas"></label>
+                                                    <input type="radio" id="star7" name="rating2" value="7" /><label
+                                                        for="star7" title="4 estrelas"></label>
+                                                    <input type="radio" id="star8" name="rating2" value="8" /><label
+                                                        for="star8" title="3 estrelas"></label>
+                                                    <input type="radio" id="star9" name="rating2" value="9" /><label
+                                                        for="star9" title="2 estrelas"></label>
+                                                    <input type="radio" id="star10" name="rating2" value="10" /><label
+                                                        for="star10" title="1 estrela"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb1">
+                                            <a href="#"><img
+                                                    src="imagens/vestibular/43novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__bodyprog">
+                                            <div class="card__category"><a href="#">Vestibular</a></div>
+                                            <h2 class="card__title"><a href="#">Pré Vestibular</a></h2>
+                                            <div class="card__subtitle card__subtitle2">Fernando Martins | Professor
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 4px">
+                                                <div class="progress-bar color-progress" style="width: 47%"></div>
+                                            </div>
+
+                                            <div class="star-group">
+                                                <span>47% concluido</span>
+                                                <div
+                                                    class="starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                    <input type="radio" id="star16" name="rating3" value="1" /><label
+                                                        for="star16" title="5 estrelas"></label>
+                                                    <input type="radio" id="star17" name="rating3" value="2" /><label
+                                                        for="star17" title="4 estrelas"></label>
+                                                    <input type="radio" id="star18" name="rating3" value="3" /><label
+                                                        for="star18" title="3 estrelas"></label>
+                                                    <input type="radio" id="star19" name="rating3" value="4" /><label
+                                                        for="star19" title="2 estrelas"></label>
+                                                    <input type="radio" id="star20" name="rating3" value="5" /><label
+                                                        for="star20" title="1 estrela"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb1">
+                                            <a href="#"><img
+                                                    src="imagens/vestibular/44novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart" id="coracao1"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__bodyprog">
+                                            <div class="card__category"><a href="#">Vestibular</a></div>
+                                            <h2 class="card__title"><a href="#">Cronograma Enem</a></h2>
+                                            <div class="card__subtitle card__subtitle2">Anna Luiza Cmapos | Professora
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 4px">
+                                                <div class="progress-bar color-progress" style="width: 0%"></div>
+                                            </div>
+
+                                            <div class="star-group">
+                                                <span>COMEÇAR CURSO</span>
+                                                <div
+                                                    class="starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                    <input type="radio" id="star21" name="rating4" value="1" /><label
+                                                        for="star21" title="5 estrelas"></label>
+                                                    <input type="radio" id="star22" name="rating4" value="2" /><label
+                                                        for="star22" title="4 estrelas"></label>
+                                                    <input type="radio" id="star23" name="rating4" value="3" /><label
+                                                        for="star23" title="3 estrelas"></label>
+                                                    <input type="radio" id="star24" name="rating4" value="4" /><label
+                                                        for="star24" title="2 estrelas"></label>
+                                                    <input type="radio" id="star25" name="rating4" value="5" /><label
+                                                        for="star25" title="1 estrela"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- linha 2  -->
+                            <div class="row justify-content-evenly" style="margin-top: 5%;">
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb1">
+                                            <a href="#"><img
+                                                    src="imagens/vestibular/45novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart" id="coracao1"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__bodyprog">
+                                            <div class="card__category"><a href="#">Vestibular</a></div>
+                                            <h2 class="card__title"><a href="#">Intensivo Enem</a></h2>
+                                            <div class="card__subtitle card__subtitle2">Isabella Maia |  Professora
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                                aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 4px">
+                                                <div class="progress-bar color-progress" style="width: 45%"></div>
+                                            </div>
+
+                                            <div class="star-group">
+                                                <span>45% concluido</span>
+                                                <div
+                                                    class="starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                    <input type="radio" id="star11" name="rating5" value="21" /><label
+                                                        for="star11" title="5 estrelas"></label>
+                                                    <input type="radio" id="star12" name="rating5" value="22" /><label
+                                                        for="star12" title="4 estrelas"></label>
+                                                    <input type="radio" id="star13" name="rating5" value="23" /><label
+                                                        for="star13" title="3 estrelas"></label>
+                                                    <input type="radio" id="star14" name="rating5" value="24" /><label
+                                                        for="star14" title="2 estrelas"></label>
+                                                    <input type="radio" id="star15" name="rating5" value="25" /><label
+                                                        for="star15" title="1 estrela"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb1">
+                                            <a href="#"><img
+                                                    src="imagens/vestibular/46novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart" id="coracao1"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__bodyprog">
+                                            <div class="card__category"><a href="#">Vestibular</a></div>
+                                            <h2 class="card__title"><a href="#">Extensivo 2023</a></h2>
+                                            <div class="card__subtitle card__subtitle2">Maria Angélica | Professora
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                                aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 4px">
+                                                <div class="progress-bar color-progress" style="width: 17%"></div>
+                                            </div>
+
+                                            <div class="star-group">
+                                                <span>17% concluido</span>
+                                                <div
+                                                    class="starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                    <input type="radio" id="star26" name="rating6" value="6" /><label
+                                                        for="star26" title="5 estrelas"></label>
+                                                    <input type="radio" id="star27" name="rating6" value="7" /><label
+                                                        for="star27" title="4 estrelas"></label>
+                                                    <input type="radio" id="star28" name="rating6" value="8" /><label
+                                                        for="star28" title="3 estrelas"></label>
+                                                    <input type="radio" id="star29" name="rating6" value="9" /><label
+                                                        for="star29" title="2 estrelas"></label>
+                                                    <input type="radio" id="star30" name="rating6" value="10" /><label
+                                                        for="star30" title="1 estrela"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb1">
+                                            <a href="#"><img
+                                                    src="imagens/vestibular/47novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart" id="coracao1"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__bodyprog">
+                                            <div class="card__category"><a href="#">Vestibular</a></div>
+                                            <h2 class="card__title"><a href="#">Preparatório Enem</a></h2>
+                                            <div class="card__subtitle card__subtitle2"> Felpie Pitanga | Profesor
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 4px">
+                                                <div class="progress-bar color-progress" style="width: 85%"></div>
+                                            </div>
+
+                                            <div class="star-group">
+                                                <span>85% concluido</span>
+                                                <div
+                                                    class="starrating starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                    <input type="radio" id="star31" name="rating7" value="1" /><label
+                                                        for="star31" title="5 estrelas"></label>
+                                                    <input type="radio" id="star32" name="rating7" value="2" /><label
+                                                        for="star32" title="4 estrelas"></label>
+                                                    <input type="radio" id="star33" name="rating7" value="3" /><label
+                                                        for="star33" title="3 estrelas"></label>
+                                                    <input type="radio" id="star34" name="rating7" value="4" /><label
+                                                        for="star34" title="2 estrelas"></label>
+                                                    <input type="radio" id="star35" name="rating7" value="5" /><label
+                                                        for="star35" title="1 estrela"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb1">
+                                            <a href="#"><img
+                                                    src="imagens/artes/31novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart" id="coracao1"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__bodyprog">
+                                            <div class="card__category"><a href="#">Artes</a></div>
+                                            <h2 class="card__title"><a href="#">Pintira Prática</a></h2>
+                                            <div class="card__subtitle card__subtitle2">Vitória Almeida | Artista Plástica
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                                aria-valuenow="05" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 4px">
+                                                <div class="progress-bar color-progress" style="width: 05%"></div>
+                                            </div>
+
+                                            <div class="star-group">
+                                                <span>05% Concluido</span>
+                                                <div
+                                                    class="starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                    <input type="radio" id="star36" name="rating8" value="1" /><label
+                                                        for="star36" title="5 estrelas"></label>
+                                                    <input type="radio" id="star37" name="rating8" value="2" /><label
+                                                        for="star37" title="4 estrelas"></label>
+                                                    <input type="radio" id="star38" name="rating8" value="3" /><label
+                                                        for="star38" title="3 estrelas"></label>
+                                                    <input type="radio" id="star39" name="rating8" value="4" /><label
+                                                        for="star39" title="2 estrelas"></label>
+                                                    <input type="radio" id="star40" name="rating8" value="5" /><label
+                                                        for="star40" title="1 estrela"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+                            <div class="row justify-content-evenly" style="margin-top: 5%;">
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb1">
+                                            <a href="#"><img
+                                                    src="imagens/artes/32novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart" id="coracao1"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__bodyprog">
+                                            <div class="card__category"><a href="#">Artes</a></div>
+                                            <h2 class="card__title"><a href="#">Desenho Digital</a></h2>
+                                            <div class="card__subtitle card__subtitle2">Alberto Guiné | Desenhista
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 4px">
+                                                <div class="progress-bar color-progress" style="width: 39%"></div>
+                                            </div>
+
+                                            <div class="star-group">
+                                                <span>39% concluido</span>
+                                                <div
+                                                    class="starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                    <input type="radio" id="star41" name="rating9" value="1" /><label
+                                                        for="star41" title="5 estrelas"></label>
+                                                    <input type="radio" id="star42" name="rating9" value="2" /><label
+                                                        for="star42" title="4 estrelas"></label>
+                                                    <input type="radio" id="star43" name="rating9" value="3" /><label
+                                                        for="star43" title="3 estrelas"></label>
+                                                    <input type="radio" id="star44" name="rating9" value="4" /><label
+                                                        for="star44" title="2 estrelas"></label>
+                                                    <input type="radio" id="star45" name="rating9" value="5" /><label
+                                                        for="star45" title="1 estrela"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb1">
+                                            <a href="#"><img
+                                                    src="imagens/artes/33novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart" id="coracao1"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__bodyprog">
+                                            <div class="card__category"><a href="#">Artes</a></div>
+                                            <h2 class="card__title"><a href="#">Técnica Aquarela</a></h2>
+                                            <div class="card__subtitle card__subtitle2">Amanda Vaz | Artista
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 4px">
+                                                <div class="progress-bar color-progress" style="width: 0%"></div>
+                                            </div>
+
+                                            <div class="star-group">
+                                                <span>COMEÇAR CURSO</span>
+                                                <div
+                                                    class="starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                    <input type="radio" id="star46" name="rating10" value="6" /><label
+                                                        for="star46" title="5 estrelas"></label>
+                                                    <input type="radio" id="star47" name="rating10" value="7" /><label
+                                                        for="star47" title="4 estrelas"></label>
+                                                    <input type="radio" id="star48" name="rating10" value="8" /><label
+                                                        for="star48" title="3 estrelas"></label>
+                                                    <input type="radio" id="star49" name="rating10" value="9" /><label
+                                                        for="star49" title="2 estrelas"></label>
+                                                    <input type="radio" id="star50" name="rating10" value="10" /><label
+                                                        for="star50" title="1 estrela"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb1">
+                                            <a href="#"><img
+                                                    src="imagens/artes/34novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart" id="coracao1"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__bodyprog">
+                                            <div class="card__category"><a href="#">Artes</a></div>
+                                            <h2 class="card__title"><a href="#">Desenhos Perfeitos!</a></h2>
+                                            <div class="card__subtitle card__subtitle2">Emily Alcântara  | Artista
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 4px">
+                                                <div class="progress-bar color-progress" style="width: 75%"></div>
+                                            </div>
+
+                                            <div class="star-group">
+                                                <span>75% concluido</span>
+                                                <div
+                                                    class="starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                    <input type="radio" id="star51" name="rating11" value="1" /><label
+                                                        for="star51" title="5 estrelas"></label>
+                                                    <input type="radio" id="star52" name="rating11" value="2" /><label
+                                                        for="star52" title="4 estrelas"></label>
+                                                    <input type="radio" id="star53" name="rating11" value="3" /><label
+                                                        for="star53" title="3 estrelas"></label>
+                                                    <input type="radio" id="star54" name="rating11" value="4" /><label
+                                                        for="star54" title="2 estrelas"></label>
+                                                    <input type="radio" id="star55" name="rating11" value="5" /><label
+                                                        for="star55" title="1 estrela"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb1">
+                                            <a href="#"><img
+                                                    src="imagens/artes/35novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart" id="coracao1"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__bodyprog">
+                                            <div class="card__category"><a href="#">Artes</a></div>
+                                            <h2 class="card__title"><a href="#">Crochê Rentável </a></h2>
+                                            <div class="card__subtitle card__subtitle2">Ivone Castro  | Aposentada
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 4px">
+                                                <div class="progress-bar color-progress" style="width: 0%"></div>
+                                            </div>
+
+                                            <div class="star-group">
+                                                <span>COMEÇAR CURSO</span>
+                                                <div
+                                                    class="starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                    <input type="radio" id="56" name="rating12" value="1" /><label
+                                                        for="star56" title="5 estrelas"></label>
+                                                    <input type="radio" id="star57" name="rating12" value="2" /><label
+                                                        for="star57" title="4 estrelas"></label>
+                                                    <input type="radio" id="star58" name="rating12" value="3" /><label
+                                                        for="star58" title="3 estrelas"></label>
+                                                    <input type="radio" id="star59" name="rating12" value="4" /><label
+                                                        for="star59" title="2 estrelas"></label>
+                                                    <input type="radio" id="star60" name="rating12" value="5" /><label
+                                                        for="star60" title="1 estrela"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+                            <!-- linha 3  -->
+                            <div class="row justify-content-evenly" style="margin-top: 5%;">
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb1">
+                                            <a href="#"><img
+                                                    src="imagens/artes/36novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart" id="coracao1"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__bodyprog">
+                                            <div class="card__category"><a href="#">Artes</a></div>
+                                            <h2 class="card__title"><a href="#">Técnica de Esfuminho</a></h2>
+                                            <div class="card__subtitle card__subtitle2">Roberto Valter| Artista Plástico
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                                aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 4px">
+                                                <div class="progress-bar color-progress" style="width: 32%"></div>
+                                            </div>
+
+                                            <div class="star-group">
+                                                <span>32% concluido</span>
+                                                <div
+                                                    class="starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                    <input type="radio" id="star61" name="rating13" value="1" /><label
+                                                        for="star61" title="5 estrelas"></label>
+                                                    <input type="radio" id="star62" name="rating13" value="2" /><label
+                                                        for="star62" title="4 estrelas"></label>
+                                                    <input type="radio" id="star63" name="rating13" value="3" /><label
+                                                        for="star63" title="3 estrelas"></label>
+                                                    <input type="radio" id="star64" name="rating13" value="4" /><label
+                                                        for="star64" title="2 estrelas"></label>
+                                                    <input type="radio" id="star65" name="rating13" value="5" /><label
+                                                        for="star65" title="1 estrela"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb1">
+                                            <a href="#"><img
+                                                    src="imagens/artes/37novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart" id="coracao1"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__bodyprog">
+                                            <div class="card__category"><a href="#">Artes</a></div>
+                                            <h2 class="card__title"><a href="#">Traços Perfeitos</a></h2>
+                                            <div class="card__subtitle card__subtitle2">Mariana Cense | Arquiteta
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                                aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 4px">
+                                                <div class="progress-bar color-progress" style="width: 78%"></div>
+                                            </div>
+
+                                            <div class="star-group">
+                                                <span>78% concluido</span>
+                                                <div
+                                                    class="starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                    <input type="radio" id="star66" name="rating14" value="6" /><label
+                                                        for="star66" title="5 estrelas"></label>
+                                                    <input type="radio" id="star67" name="rating14" value="7" /><label
+                                                        for="star67" title="4 estrelas"></label>
+                                                    <input type="radio" id="star68" name="rating14" value="8" /><label
+                                                        for="star68" title="3 estrelas"></label>
+                                                    <input type="radio" id="star69" name="rating14" value="9" /><label
+                                                        for="star69" title="2 estrelas"></label>
+                                                    <input type="radio" id="star70" name="rating14" value="10" /><label
+                                                        for="star70" title="1 estrela"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb1">
+                                            <a href="#"><img
+                                                    src="imagens/artes/38novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart" id="coracao1"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__bodyprog">
+                                            <div class="card__category"><a href="#">Artes</a></div>
+                                            <h2 class="card__title"><a href="#">Notas Instrumentais</a></h2>
+                                            <div class="card__subtitle card__subtitle2">Gustavo Ramos | Cantor
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                                aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 4px">
+                                                <div class="progress-bar color-progress" style="width: 29%"></div>
+                                            </div>
+
+                                            <div class="star-group">
+                                                <span>29% concluido</span>
+                                                <div
+                                                    class="starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                    <input type="radio" id="star71" name="rating15" value="1" /><label
+                                                        for="star71" title="5 estrelas"></label>
+                                                    <input type="radio" id="star72" name="rating15" value="2" /><label
+                                                        for="star72" title="4 estrelas"></label>
+                                                    <input type="radio" id="star73" name="rating15" value="3" /><label
+                                                        for="star73" title="3 estrelas"></label>
+                                                    <input type="radio" id="star74" name="rating15" value="4" /><label
+                                                        for="star74" title="2 estrelas"></label>
+                                                    <input type="radio" id="star75" name="rating15" value="5" /><label
+                                                        for="star75" title="1 estrela"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb1">
+                                            <a href="#"><img
+                                                    src="imagens/artes/40novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar(this)" class="fa fa-heart" id="coracao1"
+                                                        title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__bodyprog">
+                                            <div class="card__category"><a href="#">Artes</a></div>
+                                            <h2 class="card__title"><a href="#">Obras com Biscuit</a></h2>
+                                            <div class="card__subtitle card__subtitle2">Aurora Gruta | Artista
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Example 1px high"
+                                                aria-valuenow="63" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 4px">
+                                                <div class="progress-bar color-progress" style="width: 63%"></div>
+                                            </div>
+
+                                            <div class="star-group">
+                                                <span>63% concluido</span>
+                                                <div
+                                                    class="starrating risingstar d-flex justify-content-center flex-row-reverse ms-auto">
+                                                    <input type="radio" id="star76" name="rating16" value="1" /><label
+                                                        for="star76" title="5 estrelas"></label>
+                                                    <input type="radio" id="star77" name="rating16" value="2" /><label
+                                                        for="star77" title="4 estrelas"></label>
+                                                    <input type="radio" id="star78" name="rating16" value="3" /><label
+                                                        for="star78" title="3 estrelas"></label>
+                                                    <input type="radio" id="star79" name="rating16" value="4" /><label
+                                                        for="star79" title="2 estrelas"></label>
+                                                    <input type="radio" id="star80" name="rating16" value="5" /><label
+                                                        for="star80" title="1 estrela"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                            <!-- PaginatioN -->
+                            <div class="demo paginacao" style="margin-top: -10%;">
+                                <nav class="pagination-outer" aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a href="#" class="page-link" aria-label="Previous">
+                                                <span aria-hidden="true">«</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link" aria-label="Next">
+                                                <span aria-hidden="true">»</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End Progresso -->
+
+
+                    <!-- LISTA DE DESEJOS -->
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+
+                        <div class="container" style="margin-top: -5%;">
+                            <div class="row" style="margin-top: 20%;">
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb">
+                                            <a href="#"><img
+                                                    src="imagens/tecnologia/1novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar1(this)" class="fa fa-heart fa-heart2"
+                                                        id="coracao5" title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Tecnologia</a></div>
+                                            <h2 class="card__title"><a href="#">Css Completo</a></h2>
+                                            <div class="card__subtitle">Gabi Lima | Professora</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho"
+                                                    style="color: #8B00F5;"></i>
+                                            </div>
+                                            <p class="card__description">
+                                                Estude agora e conquiste sua vaga no futúro!<br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb">
+                                            <a href="#"><img
+                                                    src="imagens/tecnologia/2novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar1(this)" class="fa fa-heart fa-heart2"
+                                                        id="coracao6" title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Tecnologia</a></div>
+                                            <h2 class="card__title"><a href="#">Curso de Html</a></h2>
+                                            <div class="card__subtitle">Lima Bstos | Empreendedor</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 97,50</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho"
+                                                    style="color: #8B00F5;"></i>
+                                            </div>
+                                            <p class="card__description">
+                                                Aprenda a programar do 0!<br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb">
+                                            <a href="#"><img
+                                                    src="imagens/tecnologia/3novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar1(this)" class="fa fa-heart fa-heart2"
+                                                        id="coracao7" title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Tecnologia</a></div>
+                                            <h2 class="card__title"><a href="#">Java Script Puro!</a></h2>
+                                            <div class="card__subtitle">Ivone Camões | Desenvolvedora</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 102,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho"
+                                                    style="color: #8B00F5;"></i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 90 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 130 <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb">
+                                            <a href="#"><img
+                                                    src="imagens/tecnologia/4novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar1(this)" class="fa fa-heart fa-heart2"
+                                                        id="coracao8" title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Tecnologia</a></div>
+                                            <h2 class="card__title"><a href="#">Instensivo PHP</a></h2>
+                                            <div class="card__subtitle">Marta Alves | Desenvolvedora</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho"
+                                                    style="color: #8B00F5;"></i>
+                                            </div>
+                                            <p class="card__description">
+                                                Curse o intensivo de PHP e veja o diferencial! <br>
+                                                <i class="fa-solid fa-video size"></i> 36 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 24h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <!-- linha 2 -->
+
+                            <div class="row" style="margin-top: 5%;">
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb">
+                                            <a href="#"><img
+                                                    src="imagens/tecnologia/5novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar1(this)" class="fa fa-heart fa-heart2"
+                                                        id="coracao9" title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Tecnologia</a></div>
+                                            <h2 class="card__title"><a href="#">Programação</a></h2>
+                                            <div class="card__subtitle">Vitor Sampaio | Desenvolvedor</div>
+                                            <div class="card__button">
+                                                <a href="pre-pagamento.html"><button class="button col-4" >Comprar</button></a>
+                                                <b class="preco">R$ 42,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho"
+                                                    style="color: #8B00F5;"></i>
+                                            </div>
+                                            <p class="card__description">
+                                                Seja um espcialista em Phyton e saia na frente! <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb">
+                                            <a href="#"><img
+                                                    src="imagens/tecnologia/6novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar1(this)" class="fa fa-heart fa-heart2"
+                                                        id="coracao10" title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Tecnologia</a></div>
+                                            <h2 class="card__title"><a href="#">Ciências Contábeis</a></h2>
+                                            <div class="card__subtitle">Henrique Valez | Desenvolvedor</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 79,80</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho"
+                                                    style="color: #8B00F5;"></i>
+                                            </div>
+                                            <p class="card__description">
+                                                Entenda como o curso unciona e saia na frente! <br>
+                                                <i class="fa-solid fa-video size"></i> 12 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 10h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb">
+                                            <a href="#"><img
+                                                    src="imagens/tecnologia/7novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar1(this)" class="fa fa-heart fa-heart2"
+                                                        id="coracao11" title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Tecnologias</a></div>
+                                            <h2 class="card__title"><a href="#">Usando o Bootstrap</a></h2>
+                                            <div class="card__subtitle">Camila Veiaz | Desenvolvedora</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho"
+                                                    style="color: #8B00F5;"></i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 20 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb">
+                                            <a href="#"><img
+                                                    src="imagens/tecnologia/8novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar1(this)" class="fa fa-heart fa-heart2"
+                                                        id="coracao12" title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Tecnologia</a></div>
+                                            <h2 class="card__title"><a href="#">Plataforma Cursando</a></h2>
+                                            <div class="card__subtitle">Roberto Alvez | Desenvolvedor</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 107,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho"
+                                                    style="color: #8B00F5;"></i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 70 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 65h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            
+                            <!-- linha 3 -->
+
+                            <div class="row" style="margin-top: 5%;">
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb">
+                                            <a href="#"><img
+                                                    src="imagens/tecnologia/9novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar1(this)" class="fa fa-heart fa-heart2"
+                                                        id="coracao9" title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Tecnologia</a></div>
+                                            <h2 class="card__title"><a href="#">Programando TI</a></h2>
+                                            <div class="card__subtitle">Luana Menezes | Professora</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 18,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho"
+                                                    style="color: #8B00F5;"></i>
+                                            </div>
+                                            <p class="card__description">
+                                                De os primeiros passos para a programação <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb">
+                                            <a href="#"><img
+                                                    src="imagens/tecnologia/10novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar1(this)" class="fa fa-heart fa-heart2"
+                                                        id="coracao10" title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Tecnologia</a></div>
+                                            <h2 class="card__title"><a href="#">Eng. Software</a></h2>
+                                            <div class="card__subtitle">Anna Gaspar | Programadora</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho"
+                                                    style="color: #8B00F5;"></i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb">
+                                            <a href="#"><img
+                                                    src="imagens/artes/38novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar1(this)" class="fa fa-heart fa-heart2"
+                                                        id="coracao11" title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Artes</a></div>
+                                            <h2 class="card__title"><a href="#">Artes Instrumentais</a></h2>
+                                            <div class="card__subtitle">Gustavo Ramos | Cantor</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 34,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho"
+                                                    style="color: #8B00F5;"></i>
+                                            </div>
+                                            <p class="card__description">
+                                               Notas musicais para o violão. <br>
+                                                <i class="fa-solid fa-video size"></i> 12 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 8h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6 col-md-4 col-lg-3">
+                                    <div class="cardDesejo">
+                                        <div class="card__thumb">
+                                            <a href="#"><img
+                                                    src="imagens/artes/35novo.png" /></a>
+                                        </div>
+                                        <div class="card__date">
+                                            <span class="card_date_day">
+                                                <div class=" icones-clicados">
+                                                    <i onclick="mudarAoClicar1(this)" class="fa fa-heart fa-heart2"
+                                                        id="coracao12" title="adicionar aos favoritos"></i>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__category"><a href="#">Artes</a></div>
+                                            <h2 class="card__title"><a href="#">Crochê Rentável</a></h2>
+                                            <div class="card__subtitle">Vitória Seixas | Artesã</div>
+                                            <div class="card__button">
+                                                <button class="button col-4" href="#">Comprar</button>
+                                                <b class="preco">R$ 14,99</b>
+                                                <i class="fa-solid fa-cart-shopping carrinho"
+                                                    style="color: #8B00F5;"></i>
+                                            </div>
+                                            <p class="card__description">
+                                                Transforme autoestima com nosso curso especializado. <br>
+                                                <i class="fa-solid fa-video size"></i> 7 vídeos <br>
+                                                <i class="fa-solid fa-clock size"></i> Duração 15h <br>
+                                                4.5 <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-solid fa-star size" style="color: #ffd500;"></i>
+                                                <i class="fa-regular fa-star size" style="color: #ffd500;"></i> (900)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- End Lista de Desejos-->
+
+
+
+                    <!-- CERTIFICADOS -->
+                    <div class="tab-pane fade certificadoTeste" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="container certificados" style="margin-top: 1%;">
+
+                            <!-- linha 1 -->
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box box1">
+                                        <img src="imagens/certificado1.png">
+                                        <div class="box-content">
+                                            <h3 class="title">Intensivo de CSS</h3>
+                                            <span class="post">Gabriel de Lima</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a
+                                                    href="imagens/certificado1.png" target="_blank"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box">
+                                        <img src="imagens/certificado2.png">
+                                        <div class="box-content">
+                                            <h3 class="title">Desing de Sobrancelhas</h3>
+                                            <span class="post">Arnaldo Sanxes</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a href="imagens/certificado2.png" target="_blank"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box">
+                                        <img src="imagens/certificado3.png">
+                                        <div class="box-content">
+                                            <h3 class="title">Engenharia de Produção</h3>
+                                            <span class="post">Roberta Mendes</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a href="imagens/certificado3.png" target="_blank"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box">
+                                        <img src="imagens/certificado4.png">
+                                        <div class="box-content">
+                                            <h3 class="title">Administração EAD</h3>
+                                            <span class="post">Miguel castro</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a href="imagens/certificado4.png" target="_blank"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <!-- linha 2 -->
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box">
+                                        <img src="imagens/certificado5.png">
+                                        <div class="box-content">
+                                            <h3 class="title">Intensivo Enem</h3>
+                                            <span class="post">Rosângela Lima</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a href="imagens/certificado5.png" target="_blank"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box">
+                                        <img src="imagens/certificado6.png">
+                                        <div class="box-content">
+                                            <h3 class="title">Programação de Javascript</h3>
+                                            <span class="post">Arnaldo Sanxes</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a href="imagens/certificado6.png" target="_blank"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box">
+                                        <img src="imagens/certificado7.png">
+                                        <div class="box-content">
+                                            <h3 class="title">Cursinho Pré-Vestibular</h3>
+                                            <span class="post">Roberta Mendes</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a href="imagens/certificado7.png" target="_blank"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box">
+                                        <img src="imagens/certificado8.png">
+                                        <div class="box-content">
+                                            <h3 class="title">Crochê Passo a passo</h3>
+                                            <span class="post">Miguel castro</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a href="imagens/certificado8.png" target="_blank"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- linha 3 -->
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box">
+                                        <img src="imagens/certificado9.png">
+                                        <div class="box-content">
+                                            <h3 class="title">Javascript de Uma Vez!</h3>
+                                            <span class="post">Rosângela Lima</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a href="imagens/certificado9.png" target="_blank"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box">
+                                        <img src="imagens/certificado10.png" style="border-radius: 5px solid violet;">
+                                        <div class="box-content">
+                                            <h3 class="title">Pasando em Ciências Contábeis</h3>
+                                            <span class="post">Arnaldo Sanxes</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a
+                                                    href="imagens/certificado10.png" target="_blank"><i
+                                                        class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Certificados-->
+
+
+
+
+
+
+                    
+              <!-- Aprendizado -->
+              <div class="tab-pane fade certificadoTeste" id="nav-learn" role="tabpanel" aria-labelledby="nav-learn-tab">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 alerta">
+                      <h3 style="margin-top: 1%;" >Alertas de Aprendizado</h3>
+                      <h6 style="margin-top: 2%;">Definir Alertas</h6>
+                      <p style="margin-top: 1.5%;"> Alguns minutos de estudo por dia valem a pena.
+                        Pesquisas mostram que os alunos que fazem do
+                        estudo um hábito têm maior probabilidade de alcançar suas metas. Reserve um
+                        tempo para
+                        estudar e receba lembretes usando seu programador de aprendizado.</p>
+                    </div>
+                  </div>
+
+
+
+                  <div class="row" style="margin-top: 0.5%;">
+                    <div class="col-sm-12">
+                      <a class="btn btn-lg pink" data-bs-toggle="modal" data-bs-target="#exampleModal">Programar um
+                        Alerta de Aprendizado ➕</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                      <h6 style="margin-top: 5%;">Definir Alertas</h6>
+                      <p style="margin-top: 1.5%;"> Não quer agendar grandes períodos? Defina um lembrete
+                        de aprendizado para receber notificações do aplicativo mobile do Cursando.</p>
+                    </div>
+
+                    <div class=".col-sm-12 col-md-10 col-lg-6">
+                      <form>
+                        <div class="mb-3" style="margin-left: 3%;">
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                              checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Receber
+                              Notificação de Alertas pelo aplicativo</label>
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <!-- <label for="exampleInputEmail1" class="form-label"></label> -->
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioCheckDefault"
+                              id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Geral
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Curso Específico
+                            </label>
+                          </div>
+
+                          <input type="email" placeholder="Preencha com o curso desejado" class="form-control"
+                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+
+                   
+
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <a class="btn btn-md" data-bs-toggle="modal1" data-bs-target="#exampleModal1">Enviar</a>
+                              </div>
+                   
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                    <!-- End Aprendizado  -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./END TAB -->
+
+
+    <!-- chatbox -->
+
+    <div id="container-floating">
+        <a href="https://web.whatsapp.com/">
+        <div class="nd4 nds"><img class="reminder">
+            <p class="letter"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></p>
+        </a>
+        </div>
+  
+        <a href="https://www.instagram.com/cursandotecnico/">
+        <div class="nd3 nds"><img class="reminder">
+            <p class="letter"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></p>
+        </div>
+    </a>
+  
+        <div class="nd1 nds">
+            <a href="mailto:cursando-sac@gmail.com?Subject = Preciso%20%20de%20Atendimento"> 
+            <p class="letter"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i></p></a>
+        </div>
+  
+        <div id="floating-button">
+            <p class="plus">+</p>
+            <i class="fa-solid fa-pen edit" style="color: #8B00F5;"></i>
+        </div>
+    </div>
+
+
+     <!-- rodapé -->
+  <div class="container-fluid rodape filtro-rodape">
+
+    <div class="row ">
+      <div class="col-md-4 logo-rodape">
+        <b><a href="#">Cursando</a></b>
+        <p>Milhares de vídeo-aulas em um único espaço. A qualquer hora, em qualquer lugar! Cursando,
+          sua
+          plataforma EAD!</p>
+      </div>
+      <div class="col-md-2 s-1">
+
+        <ul>
+          <li>
+            <h5>Cursos</h5>
+          </li>
+          <li><a href="#">Marketing</a></li>
+          <li><a href="#">Tecnologia</a></li>
+          <li><a href="#">Vestibular</a></li>
+          <li><a href="#">Economia</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 s-1">
+
+        <ul>
+          <li>
+            <h5>Links úteis</h5>
+          </li>
+          <li><a href="#">Sua conta</a></li>
+          <li><a href="#">Seja afiliado!</a></li>
+          <li><a href="termos.html">Termos de privacidade</a></li>
+          <li><a href="#">Ajuda</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 ">
+        <form class="subscribe">
+          <h5>Faça parte da nossa comunidade!</h5>
+          <input type="text" placeholder="Digite seu e-mail">
+          <button>Inscreva-se!</button>
+        </form>
+      </div>
+      <div class="col-md-12 border-top Cr">
+        <p>© 2023 Companhia, Inc. Todos os direitos reservados.</p>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a href="#"><img src="imagens/facebook.png" width="24" alt=""></a></li>
+          <li class="ms-3"><a href="#"><img src="imagens/instagram.png" width="24" alt=""></a>
+          </li>
+          <li class="ms-3"><a href="#"><img src="imagens/tiktok.png" width="24" alt=""></a></li>
+          <li class="ms-3"><a href="#"><img src="imagens/youtube.png" width="28" alt=""></a></li>
+          <li class="ms-3"><a href="#"><img src="imagens/linkedin.png" width="24" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+  <!-- <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="modal fade" style="z-index: 99999;" id="exampleModal" tabindex="1"
+          aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Carrinho de compras</h1>
+                <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close"
+                  style="color: #8B00F5 !important;"></button>
+
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-9 lg-9">
+                      <table class="table" id="tabelaProdutos">
+                        <thead class="left_side">
+                          <tr>
+                            <th style="padding-right: 18%; padding-left: 5%;">Capa do
+                              curso</th>
+                            <th style="padding-right: 8%; padding-left: 6%;">Nome do
+                              Produto</th>
+                            <th style="padding-right: 10%;">Valor</th>
+                            <th style="padding-right: 6.5%;">Remover</th>
+                          </tr>
+                        </thead>
+                        <tbody class="tabelaCorpo" id="tabelaCorpo">
+
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="col-md-3 lg-3">
+                      <div class="right_side_total">
+                        <div>Total: <span id="valorTotal">R$ 0.00</span></div>
+                        <button type="button" class="btn btn-primary mf_btn2" data-bs-target="#exampleModalToggle2"
+                          data-bs-toggle="modal">Finalizar compra</button>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary mf_btn1" data-bs-dismiss="modal">Fechar</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+          tabindex="-1">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Pagamento</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-9 lg-9">
+
+                      <h3 style="color: #340c53;">Forma de Pagamento</h3>
+                      <ul class="nav nav-pills nav_tab_cart mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link tab-cart active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true"><i class="fa-solid fa-credit-card fa-xl "></i>Cartão de
+                            crédito/débito</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link tab-cart" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false"><i class="fa-solid fa-barcode fa-xl"></i>Boleto
+                            bancário</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link tab-cart" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false"><i class="fa-brands fa-pix fa-xl"></i>Pix</button>
+                        </li>
+
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                          aria-labelledby="pills-home-tab" tabindex="0">
+                          ...</div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                          aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                          aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="pills-disabled" role="tabpanel"
+                          aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+                      </div>
+
+
+                    </div>
+                    <div class="col-md-3 lg-3">
+                      <div class="right_side_total total_md_2">
+                        <h5 style="color: #340c53;">Detalhes do pedido</h5>
+                        <table class="table" id="tabelaProdutos">
+                          <thead class="left_side">
+                            <tr>
+
+                            </tr>
+                          </thead>
+                          <tbody class="tabelaCorpo tc_scroll" id="tabelaCorpo2">
+
+                          </tbody>
+                        </table>
+                        <div>Total: </div><span id="valorTotal2">R$ 0.00</span>
+                        <button type="button" class="btn btn-primary mf_btn2" data-bs-target="#exampleModalToggle2"
+                          data-bs-toggle="modal">Finalizar compra</button>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary mf_btn2" data-bs-target="#exampleModalToggle"
+                  data-bs-toggle="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Crie um evento</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body form_pagamento">
+                    <div class="row">
+                      <div class="col">
+                        <div class="row">
+                          <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Nome do evento</label>
+                            <input type="text" class="form-control " id="formGroupExampleInput"
+                              placeholder="Hora de estudar!">
+                          </div>
+                          <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Nome do curso</label>
+                            <input type="text" class="form-control " id="formGroupExampleInput" placeholder="Insira o Nome">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row ">
+                        <div class="col">
+                          <div class="row">
+                            <div class="col">
+                              <h6>Frequência</h6>
+                              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">Uma vez</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                    aria-selected="false">Diariamente</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                    aria-selected="false">Semanalmente</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                    aria-selected="false">Mensalmente</button>
+                                </li>
+    
+                              </ul>
+    
+    
+    
+                              <h6>Duração</h6>
+                              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">5 min</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                    aria-selected="false">10 min</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                    aria-selected="false">20 min</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                    aria-selected="false">30 min</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                    aria-selected="false">1h</button>
+                                </li>
+    
+                              </ul>
+    
+    
+                              <h6>Hora</h6>
+                              <div class="col-lg-5">
+                                <input type="time" class="form-control " aria-label="First name">
+                              </div>
+    
+                              <h6>Lembrete</h6>
+                              <div class="btn-group lembretes_inputs" role="group"
+                                aria-label="Button group with nested dropdown">
+                                <div class="btn-group" role="group">
+                                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Notificação
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Notificação</a></li>
+                                    <li><a class="dropdown-item" href="#">E-mail</a></li>
+                                  </ul>
+                                </div>
+                                <input type="number" class="form-control">
+    
+                                <div class="btn-group" role="group">
+                                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Minutos antes
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Minutos antes</a></li>
+                                    <li><a class="dropdown-item" href="#">Horas antes</a></li>
+                                    <li><a class="dropdown-item" href="#">Dias antes</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+    
+                              <h6>Data de término</h6>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label col-lg-12" for="flexRadioDefault1">
+                                  Nunca
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                  checked>
+                                <label class="form-check-label col-lg-12" for="flexRadioDefault2">
+                                  Escolha a data final
+                                  <div class="mb-3">
+    
+                                    <input type="date" class="form-control " id="formGroupExampleInput"
+                                      placeholder="Hora de estudar!">
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><a href="" style="text-decoration: none; color: white;">Sair</a> </button>
+                    <button type="button" class="btn btn-primary"><a href="" style="text-decoration: none; color: white;" onclick="pegarDados(this)">Salvar</a> </button>
+                  </div>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <script src="js/minha-analise.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
